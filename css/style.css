@@ -24,6 +24,11 @@ header .inviteimg {
   background-repeat: no-repeat;
 }
 
+.memberArea .member_icon {
+  background: url("../images/icon/membericon.png");
+  background-size: 100%;
+}
+
 .filter .title {
   background: url("../images/loginTop.jpg") no-repeat top center;
   background-size: cover;
@@ -73,11 +78,6 @@ header .refresh_ic {
 header .editBtn {
   background: url("../images/icon/svg/edit.svg") no-repeat;
   background-size: 100%;
-}
-
-header .content {
-  background: url("../images/headerTop.jpg") no-repeat top center;
-  background-size: cover;
 }
 
 .slotHeader li .all_ic {
@@ -391,7 +391,7 @@ header .content {
 }
 
 header .logo {
-  width: 95px;
+  width: 150px;
 }
 
 .single-item {
@@ -585,15 +585,8 @@ html body header .content {
           box-sizing: border-box;
   position: relative;
   overflow: hidden;
-}
-html body header .content .invite {
-  position: absolute;
-  right: 8px;
-  top: 5px;
-}
-html body header .content .invite .inviteimg {
-  width: 85px;
-  height: 40px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #26412c), to(#1e2c21));
+  background: linear-gradient(90deg, #26412c 0, #1e2c21);
 }
 html body header .content .title {
   width: 70%;
@@ -816,8 +809,9 @@ html body .marqueeBox .marquee pre {
   }
 }
 html body .memberArea {
-  width: 100%;
-  height: 55px;
+  width: 95%;
+  height: 15vh;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -827,6 +821,21 @@ html body .memberArea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f0c26b), color-stop(40%, #c09f60), to(#fae0af));
+  background: linear-gradient(0deg, #f0c26b 0, #c09f60 40%, #fae0af);
+  border-radius: 5px;
+}
+html body .memberArea .member_icon {
+  width: 30px;
+  height: 30px;
+}
+html body .memberArea::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 6.9%;
+  right: 61%;
+  background: #2f2f2f;
 }
 html body .memberArea .loginBtn {
   display: none;
@@ -836,20 +845,8 @@ html body .memberArea .loginBtn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 60px;
-  height: 70%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#943c06), to(#ffd1af));
-  background: linear-gradient(to top, #943c06 0%, #ffd1af 100%);
-  -webkit-box-shadow: inset 0 2px 1px 0 #d3a047, inset 0 -2px 0 0 #dfb988, inset -2px -1px 0 0 #ffecbd, 0 -2px 0 0 #ffebba, 0 1px 0 0 #d3a047, 2px 2px 2px 0 #bbbbbb;
-          box-shadow: inset 0 2px 1px 0 #d3a047, inset 0 -2px 0 0 #dfb988, inset -2px -1px 0 0 #ffecbd, 0 -2px 0 0 #ffebba, 0 1px 0 0 #d3a047, 2px 2px 2px 0 #bbbbbb;
-  color: #ffffff;
-  padding: 0 1px 3px 0;
-  font-size: 21px;
-  border-radius: 50%;
-  font-weight: bold;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 30px;
+  width: 85px;
+  height: 38px;
   padding: 0 0 1px 3px;
   margin-right: 3vw;
 }
@@ -872,20 +869,30 @@ html body .memberArea .registerBtn {
           justify-content: center;
   width: 60px;
   height: 70%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#943c06), to(#ffd1af));
-  background: linear-gradient(to top, #943c06 0%, #ffd1af 100%);
-  -webkit-box-shadow: inset 0 2px 1px 0 #d3a047, inset 0 -2px 0 0 #dfb988, inset -2px -1px 0 0 #ffecbd, 0 -2px 0 0 #ffebba, 0 1px 0 0 #d3a047, 2px 2px 2px 0 #bbbbbb;
-          box-shadow: inset 0 2px 1px 0 #d3a047, inset 0 -2px 0 0 #dfb988, inset -2px -1px 0 0 #ffecbd, 0 -2px 0 0 #ffebba, 0 1px 0 0 #d3a047, 2px 2px 2px 0 #bbbbbb;
-  color: #ffffff;
-  padding: 0 1px 3px 0;
-  font-size: 21px;
-  border-radius: 50%;
+  width: 9vw;
+  height: 9vw;
+  line-height: 0;
+  text-align: center;
+  background: linear-gradient(-45deg, #222, #3b3b3b);
+  -webkit-box-shadow: 2px 2px 2px 0 #5d4827;
+          box-shadow: 2px 2px 2px 0 #5d4827;
+  border: 1px solid #e1c396;
+  position: relative;
   font-weight: bold;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 30px;
   padding: 0 0 1px 3px;
   margin-right: 3vw;
+}
+html body .memberArea .registerBtn span {
+  position: absolute;
+  font-size: 5vw;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  color: #f3d3a4;
 }
 html body .memberArea .registerBtn.display {
   display: -webkit-box;
@@ -991,7 +998,7 @@ html body .memberArea .operate.login .btnBox .vipBtn {
   display: inline-block;
 }
 html body .memberArea .operate .btnBox {
-  width: 100%;
+  width: 98%;
   height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1002,24 +1009,36 @@ html body .memberArea .operate .btnBox {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 5%;
+  padding: 0 7%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 html body .memberArea .operate .btnBox button {
   width: 40px;
   height: 40px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#943c06), to(#ffd1af));
-  background: linear-gradient(to top, #943c06 0%, #ffd1af 100%);
-  -webkit-box-shadow: inset 0 2px 1px 0 #d3a047, inset 0 -2px 0 0 #dfb988, inset -2px -1px 0 0 #ffecbd, 0 -2px 0 0 #ffebba, 0 1px 0 0 #d3a047, 2px 2px 2px 0 #bbbbbb;
-          box-shadow: inset 0 2px 1px 0 #d3a047, inset 0 -2px 0 0 #dfb988, inset -2px -1px 0 0 #ffecbd, 0 -2px 0 0 #ffebba, 0 1px 0 0 #d3a047, 2px 2px 2px 0 #bbbbbb;
-  color: #ffffff;
-  padding: 0 1px 3px 0;
-  font-size: 21px;
-  border-radius: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 9vw;
+  height: 9vw;
+  line-height: 0;
+  text-align: center;
+  background: linear-gradient(-45deg, #222, #3b3b3b);
+  -webkit-box-shadow: 2px 2px 2px 0 #5d4827;
+          box-shadow: 2px 2px 2px 0 #5d4827;
+  border: 1px solid #e1c396;
+  position: relative;
   font-weight: bold;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+html body .memberArea .operate .btnBox button span {
+  position: absolute;
+  font-size: 5vw;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  color: #f3d3a4;
 }
 html body .memberArea .operate .btnBox button.vipBtn {
   font-size: 15px;
@@ -1045,11 +1064,11 @@ html body .homeCenter .gameList {
 html body .homeCenter .gameList ol {
   width: auto;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(36%, #ffffff), to(#f5f5f5));
-  background: linear-gradient(to top, #ffffff 36%, #f5f5f5 100%);
-  border: solid 1px #b69761;
-  -webkit-box-shadow: inset 1px 1px 3px 0 #ffffff, inset -2px -2px 3px 0 #5a5a5a80;
-          box-shadow: inset 1px 1px 3px 0 #ffffff, inset -2px -2px 3px 0 #5a5a5a80;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #222), to(#3b3b3b));
+  background: linear-gradient(0deg, #222 20%, #3b3b3b);
+  border: 1px solid #f5d9b1;
+  -webkit-box-shadow: inset 1px 1px 3px 0 rgba(245, 217, 177, 0.47), inset -2px -2px 3px 0 #111, inset -2px -2px 3px 0 #5a5a5a80;
+          box-shadow: inset 1px 1px 3px 0 rgba(245, 217, 177, 0.47), inset -2px -2px 3px 0 #111, inset -2px -2px 3px 0 #5a5a5a80;
   border-radius: 5px;
   overflow-y: auto;
 }
@@ -1067,6 +1086,9 @@ html body .homeCenter .gameList ol li {
   height: 20vw;
   position: relative;
 }
+html body .homeCenter .gameList ol li i {
+  background-position-y: 100%;
+}
 html body .homeCenter .gameList ol li::before {
   content: "";
   position: absolute;
@@ -1076,17 +1098,17 @@ html body .homeCenter .gameList ol li::before {
           transform: translateX(-50%);
   width: 85%;
   height: 1px;
-  background: #b7a25f;
+  background: #dcab70;
 }
 html body .homeCenter .gameList ol li.active div {
-  background: -webkit-gradient(linear, left bottom, left top, from(#e9cc93), to(#be9c5b));
-  background: linear-gradient(to top, #e9cc93 0%, #be9c5b 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#f5dba9), to(#c8a45d));
+  background: linear-gradient(0deg, #f5dba9, #c8a45d);
 }
 html body .homeCenter .gameList ol li.active div p {
-  color: #ffffff;
+  color: #1c1c1c;
 }
 html body .homeCenter .gameList ol li.active div i {
-  background-position-y: 100%;
+  background-position-y: 0%;
 }
 html body .homeCenter .gameList ol li div {
   width: 85%;
@@ -1110,7 +1132,7 @@ html body .homeCenter .gameList ol li div p {
   margin-top: 2vw;
   font-size: 3.4vw;
   font-weight: bold;
-  color: #4d4d4d;
+  color: #f3d3a4;
 }
 html body .homeCenter .gameList ol li div i {
   display: block;
@@ -1174,10 +1196,8 @@ html body footer {
 html body footer ul {
   width: 100%;
   height: 50px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #d7d7d7), color-stop(76%, #ffffff));
-  background: linear-gradient(0deg, #d7d7d7 0, #ffffff 76%);
-  -webkit-box-shadow: 0 0 8px 0 #dedede;
-          box-shadow: 0 0 8px 0 #dedede;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #dcab70), color-stop(76%, #f3d3a4));
+  background: linear-gradient(0deg, #dcab70 0, #f3d3a4 76%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1188,8 +1208,7 @@ html body footer ul {
 html body footer ul li {
   width: 20%;
   height: 38px;
-  color: #848484;
-  border-right: solid 1px #dcdddd;
+  color: #111;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1203,17 +1222,21 @@ html body footer ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-weight: bold;
 }
 html body footer ul li.active {
-  color: #704a1a;
+  color: #f3d3a4;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #26412c), to(#1e2c21));
+  background: linear-gradient(0deg, #26412c 0, #1e2c21);
+  height: 100%;
 }
 html body footer ul li.active i {
   background-position-y: 100%;
 }
 html body footer ul li i {
   display: block;
-  width: 20px;
-  height: 21px;
+  width: 25px;
+  height: 24px;
 }
 html body footer ul li i.menu_ic {
   background-position-x: 1px;

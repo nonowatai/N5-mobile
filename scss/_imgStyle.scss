@@ -21,6 +21,12 @@ header .inviteimg {
 //     background: url('../images/icon/loginIC.png') no-repeat;
 //     background-size: 100%;
 // }
+
+//登入.icon
+.memberArea  .member_icon {
+    background: url('../images/icon/membericon.png');
+    background-size: 100%;
+}
 //login_bg
 .filter .title {
     background: url('../images/loginTop.jpg') no-repeat top center;
@@ -77,10 +83,10 @@ header .editBtn {
     background-size: 100%;
 }
 //header bg
-header .content {
-    background: url('../images/headerTop.jpg') no-repeat top center;
-    background-size: cover;
-}
+// header .content {
+//     background: url('../images/headerTop.jpg') no-repeat top center;
+//     background-size: cover;
+// }
 
 //遊戲page ic
 .slotHeader li .all_ic {
@@ -386,7 +392,7 @@ header .content {
 
 //header - logo
 header .logo {
-    width: 95px;
+    width: 150px;
 }
 
 //ad - banner

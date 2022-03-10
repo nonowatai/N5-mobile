@@ -49,6 +49,11 @@ $marqueeBoxshadow: #ede5d7;
 //彈窗背景透明底
 $filter: #00000066;
 
+//header背景色
+$header-bg:linear-gradient(90deg,#26412c 0,#1e2c21);
+//member背景
+$memberArea: linear-gradient(0deg,#f0c26b 0,#c09f60 40%,#fae0af);
+
 //提示框
 @mixin remindBox {
     background: #fcf9f3;
@@ -109,31 +114,37 @@ $operate_Money: #000000;
     white-space: nowrap;
 }
 @mixin operateBtn {
-    background: linear-gradient(to top,#943c06 0%,#ffd1af 100%);
-    box-shadow: inset 0 2px 1px 0 #d3a047,
-    inset 0 -2px 0 0 #dfb988,
-    inset -2px -1px 0 0 #ffecbd,
-    0 -2px 0 0 #ffebba,
-    0 1px 0 0 #d3a047,
-    2px 2px 2px 0 #bbbbbb;
-    color: #ffffff;
-    padding: 0 1px 3px 0;
-    font-size: 21px;
-    border-radius: 50%;
+    width: 9vw;
+    height: 9vw;
+    line-height: 0;
+    text-align: center;
+    background: linear-gradient(-45deg,#222,#3b3b3b);
+    box-shadow: 2px 2px 2px 0 #5d4827;
+    border: 1px solid #e1c396;
+    position: relative;
     font-weight: bold;
     box-sizing: border-box;
+
+    span {
+        position: absolute;
+        font-size: 5vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(-45deg);
+        color: #f3d3a4;
+    }
     
 }
 
 //主頁面按鈕
-$gameListBtn_Border: #b7a25f;
-$gameListBtn_Word: #4d4d4d;
-$gameListBtn_ActiveWord: #ffffff;
-$gameListBtn_ActiveBG: linear-gradient(to top,#e9cc93 0%,#be9c5b 100%);
+$gameListBtn_Border: #dcab70;
+$gameListBtn_Word: #f3d3a4;
+$gameListBtn_ActiveWord: #1c1c1c;
+$gameListBtn_ActiveBG: linear-gradient(0deg,#f5dba9,#c8a45d);
 @mixin gameListBG {
-    background: linear-gradient(to top,#ffffff 36%,#f5f5f5 100%);
-    border: solid 1px #b69761;
-    box-shadow: inset 1px 1px 3px 0 #ffffff,
+    background: linear-gradient(0deg,#222 20%,#3b3b3b);
+    border: 1px solid #f5d9b1;
+    box-shadow: inset 1px 1px 3px 0 rgb(245 217 177 / 47%), inset -2px -2px 3px 0 #111,
     inset -2px -2px 3px 0 #5a5a5a80;
     border-radius: 5px;
 }
@@ -373,21 +384,22 @@ $slotGame_Word: #4d4d4d;
 
 //footer
 @mixin footerBG {
-    background: linear-gradient(0deg,#d7d7d7 0,#ffffff 76%);
-    box-shadow: 0 0 8px 0 #dedede;
+    background: linear-gradient(0deg,#dcab70 0,#f3d3a4 76%);
     display: flex;
     align-items: center;
 }
 @mixin footerWord {
-    color: #848484;
-    border-right: solid 1px #dcdddd;
+    color: #111;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
 
     &.active {
-        color: #704a1a;
+        color: #f3d3a4;
+        background: linear-gradient(0deg,#26412c 0,#1e2c21);
+        height: 100%;
     }
 }
 

@@ -58,21 +58,36 @@
 
 //登入區
 .memberArea {
-    width: 100%;
-    height: 55px;
+    width: 95%;
+    height: 15vh;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: $memberArea;
+    border-radius: 5px;
+
+    .member_icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 6.9%;
+        right: 61%;
+        background: #2f2f2f;
+    }
 
     //大登入按鈕
     .loginBtn {
         display: none;
         align-items: center;
         justify-content: center;
-        width: 60px;
-        height: 70%;
-        @include operateBtn;
-        border-radius: 30px;
+        width: 85px;
+        height: 38px;
         padding: 0 0 1px 3px;
         margin-right: 3vw;
 
@@ -201,17 +216,18 @@
         }
 
         .btnBox {
-            width: 100%;
+            width: 98%;
             height: 60px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 5%;
+            padding: 0 7%;
             box-sizing: border-box;
 
             button {
                 width: 40px;
                 height: 40px;
+                transform: rotate(45deg);
                 @include operateBtn;
 
                 &.vipBtn {
@@ -251,6 +267,10 @@
                 width: 24vw;
                 height: 20vw;
                 position: relative;
+
+                i {
+                    background-position-y: 100%;
+                }
     
                 &::before {
                     content: "";
@@ -273,7 +293,7 @@
                         }
     
                         i {
-                            background-position-y: 100%;
+                            background-position-y: 0%;
                         }
                     }
                 }
