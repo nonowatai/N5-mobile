@@ -229,11 +229,13 @@
                 height: 40px;
                 transform: rotate(45deg);
                 @include operateBtn;
+            }
 
-                &.vipBtn {
-                    // display: none;
-                    font-size: 15px;
-                }
+            &.vipBtn {
+                // display: none;
+            }
+            .vipWord {
+                font-size: 4vw;
             }
         }
     }

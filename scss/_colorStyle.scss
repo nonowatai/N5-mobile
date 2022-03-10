@@ -6,7 +6,7 @@ $mainBG_2: #f8f8f8;
 $mainWord_1: #000000;
 
 //主要邊框色
-$mainBorder_1: #cccccc;
+$mainBorder_1: #f3d3a4;
 $mainBorder_2: #b18e56;
 
 //金額色
@@ -25,10 +25,10 @@ $optionColor: #4d4d4d;
 
 //標題字
 $title_1: #c0933e;
-$title_2: #444;
+$title_2: #f3d3a4;
 $title_3: #666;
 $title_Time: #999;
-$title_Header: #ffffff;
+$title_Header: #f3d3a4;
 
 //選擇列字色+選擇列active
 $choose_Word: #848484;
@@ -102,8 +102,7 @@ $memberArea: linear-gradient(0deg,#f0c26b 0,#c09f60 40%,#fae0af);
 $operate_Acc: #000000;
 $operate_Money: #000000;
 @mixin operateLV {
-    background: linear-gradient(120deg,#f1d7b7 0%,#cca172 50%,#f1c999 100%);
-    border: solid 1px #cca172;
+    background: #2e7b4a;
     color: #ffffff;
     border-radius: 5px;
     font-size: 12px;
@@ -133,7 +132,6 @@ $operate_Money: #000000;
         transform: translate(-50%,-50%) rotate(-45deg);
         color: #f3d3a4;
     }
-    
 }
 
 //主頁面按鈕
@@ -208,6 +206,18 @@ $gameListBtn_ActiveBG: linear-gradient(0deg,#f5dba9,#c8a45d);
     .high {
         color: #009245;
     }
+}
+
+//彈窗
+$jumpWindow_header:linear-gradient(90deg,#277043 0,#144318);
+$jumpWindow_bg:#313131;
+$jumpWindow_text:#f3d3a4;
+$jumpWindow_border:#f3d3a4;
+@mixin jumpWindow_box {
+    border: 1px solid #299150;
+    background: transparent;
+    color: #3dbf6e;
+    border-radius: 3px;
 }
 
 //vip
@@ -522,11 +532,10 @@ $slotGame_Word: #4d4d4d;
 
 //常用橘色漸層
 @mixin mainBtn {
-    background: linear-gradient(to top,#d8be86 0%,#f0e4ad 92%);
-    border: solid 1px #957222;
+    background: linear-gradient(0deg,#f3d3a4 16%,#c29054 47%,#f3d3a4 84%);
     font-size: 4vw;
     font-weight: bold;
-    color: #7c5625;
+    color: #252525;
     border-radius: 3px;
     letter-spacing: 1px;
 
@@ -647,6 +656,7 @@ button:disabled {
     border-radius: 3px;
     padding-left: 15px;
     box-sizing: border-box;
+    background: #1c1c1c;
 
     &::placeholder {
         color: #848484;
