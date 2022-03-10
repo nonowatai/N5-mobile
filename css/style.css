@@ -1978,7 +1978,7 @@ html body .filter .gameWindow form .row.btnBox {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 0 7vw 20vw;
+  margin: 0 0 1vw 20vw;
 }
 html body .filter .gameWindow form .row.btnBox button {
   width: 19vw;
