@@ -13,6 +13,7 @@
         margin-bottom: 10px;
         background: $mainBG_1;
         padding-top: 25px;
+        border-bottom: 1px solid $mainBorder_1;
 
         //漸層
         .gradient {
@@ -305,6 +306,7 @@
         .forPlatform {
             padding-bottom: 15px;
             display: none;
+            border-bottom: 1px solid $mainBorder_1;
 
             &.display {
                 display: block;
@@ -323,6 +325,7 @@
                 letter-spacing: 1px;
                 color: $title_Time;
                 font-weight: bold;
+                border-top: 1px solid $mainBorder_1;
 
                 button {
                     width: 18.93vw;

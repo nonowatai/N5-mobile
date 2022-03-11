@@ -213,6 +213,10 @@ header .editBtn {
 }
 
 //member_info
+.memberInfo .inputList .qr-img {
+    background: url('../images/icon/qr.png') no-repeat;
+    background-size: 100%;
+}
 .memberInfo .info_2 .check {
     background: url('../images/icon/svg/check.svg') no-repeat;
     background-size: 100%;
@@ -277,6 +281,10 @@ header .editBtn {
 //新增help客服頁ic
 .helpInner .btnBox .online_ic {
     background: url('../images/icon/svg/service3.svg') no-repeat center;
+    background-size: contain;
+}
+.helpInner .btnBox1 .service_ic {
+    background: url('../images/icon/svg/customer-service.svg') no-repeat center;
     background-size: contain;
 }
 .helpInner .btnBox .line_ic {

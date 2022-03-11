@@ -3,7 +3,7 @@
     width: 100%;
     height: auto;
     min-height: calc(100% - 92px);
-    background: $mainBG_2;
+    background: $mainBG_3;
     padding-bottom: 10px;
 
     //玩家資訊
@@ -13,6 +13,7 @@
         margin-bottom: 10px;
         background: $mainBG_1;
         padding-bottom: 13px;
+        border-bottom: 1px solid $mainBorder_1;
 
         .info {
             display: flex;
@@ -23,6 +24,7 @@
             box-sizing: border-box;
             width: 100%;
             height: auto;
+            border-top: 1px solid $mainBorder_1;
 
             div {
 
@@ -47,7 +49,7 @@
                     font-size: 13px;
                     letter-spacing: 1px;
                     font-weight: bold;
-                    color: $title_Time;
+                    color: $title_3;
                 }
             }
 
@@ -82,7 +84,7 @@
                 width: 27.73vw;
                 height: 8.27vw;
                 @include mainBtn;
-                border-radius: 0 5vw 5vw 0;
+                border-radius: 0 3px 3px 0;
                 font-size: 15px;
             }
         }
@@ -98,6 +100,16 @@
                 width: 49%;
                 height: 18.4vw;
                 @include normalBtn;
+
+                &:active {
+                    .wallet_ic {
+                        background-position-y: 100%;
+                    }
+    
+                    .vip_ic {
+                        background-position-y: 100%;
+                    }
+                }
 
                 .wallet_ic {
                     display: block;
@@ -117,12 +129,10 @@
                     font-size: 18px;
                     font-weight: bold;
                     letter-spacing: 2px;
-                    color: $title_1;
 
                     p {
                         font-size: 12px;
                         letter-spacing: 1px;
-                        color: $title_3;
                         text-align: left;
                     }
                 }
@@ -263,6 +273,7 @@
         width: 100%;
         height: auto;
         display: flex;
+        border-bottom: 1px solid $mainBorder_1;
 
         li {
             width: 50%;
@@ -291,7 +302,7 @@
     height: calc(100vh - 136px);
     padding: 10px 0;
     box-sizing: border-box;
-    background: $mainBG_2;
+    background: $mainBG_3;
 
     form {
         width: 100%;
@@ -300,7 +311,7 @@
         ul {
             width: 100%;
             height: auto;
-            background: $mainBG_1;
+            background: $mainBG_3;
             padding-bottom: 12px;
 
             li {
@@ -312,7 +323,8 @@
                 justify-content: space-between;
                 box-sizing: border-box;
                 padding: 0 17px;
-                border-bottom: solid 1px $mainBorder_1;
+                
+                border-top: solid 1px $mainBorder_2;
 
                 &.active {
                     height: 103px;
@@ -328,7 +340,7 @@
 
                     &::before {
                         content: "※ ";
-                        color: $remind;
+                        color: $title_2;
                         padding: 0 5px 0 0;
                         font-size: 14px;
                     }
@@ -342,7 +354,7 @@
                 }
 
                 input {
-                    width: 64vw;
+                    width: 53vw;
                     height: 42px;
                     @include memberInput;
                 }
@@ -354,13 +366,42 @@
                     height: 42px;
                     margin-bottom: 2px;
                 }
+
+                .li_box {
+                    width: 69%;
+                    display: flex;
+                    box-sizing: border-box;
+                    justify-content: flex-end;
+                    align-items: center;
+
+                    .smallbutton {
+                    width: 47px;
+                    height: 29px;
+                    font-size: 13px;
+                    @include noBgBtn_Normal;
+                    display: block;
+                   }
+
+                   p {
+                      padding: 0 5px;
+                      color: $title_3;
+                   }
+                }
+
+                .qr-img {
+                    width: 23vw;
+                    height: 23vw;
+                    margin-top: 15px;
+                }
+
+                
             }
 
             .saveBtn {
                 display: block;
                 width: 92vw;
                 height: 42px;
-                margin: 12px auto 0;
+                margin: 12px auto 7px;
                 @include mainBtn;
             }
         }
@@ -372,6 +413,8 @@
         margin: 10px 0;
 
         &.info_2 {
+            margin: 62px 0;
+            border-top: 1px solid $mainBorder_2;
 
             span {
                 display: flex;
@@ -381,12 +424,20 @@
                     width: 30vw;
                 }
             }
+
+            ul {
+                li{
+                    &:nth-of-type(1) {
+                        height: 17vw;
+                    }
+                }
+            }
         }
 
         ul {
             width: 100%;
             height: auto;
-            background: $mainBG_1;
+            background: $mainBG_3;
             
             li {
                 width: 100%;
@@ -487,7 +538,6 @@
     height: calc(100vh - 136px);
     padding: 10px 4vw;
     box-sizing: border-box;
-    background: $mainBG_2;
 
     .platformBox {
         width: 100%;
@@ -504,7 +554,7 @@
             border-bottom: solid 1px $mainBorder_1;
             box-sizing: border-box;
             padding: 0 17px;
-            color: $title_1;
+            color: $title_2;
             font-size: 14px;
             font-weight: bold;
             display: flex;

@@ -210,6 +210,11 @@ header .editBtn {
   background-size: 700%;
 }
 
+.memberInfo .inputList .qr-img {
+  background: url("../images/icon/qr.png") no-repeat;
+  background-size: 100%;
+}
+
 .memberInfo .info_2 .check {
   background: url("../images/icon/svg/check.svg") no-repeat;
   background-size: 100%;
@@ -283,6 +288,11 @@ header .editBtn {
 
 .helpInner .btnBox .online_ic {
   background: url("../images/icon/svg/service3.svg") no-repeat center;
+  background-size: contain;
+}
+
+.helpInner .btnBox1 .service_ic {
+  background: url("../images/icon/svg/customer-service.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -638,12 +648,11 @@ html body header .content .detailBtn {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 14px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#e6e6e6));
-  background: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%);
-  border: solid 1px #bda16e;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(16%, #f3d3a4), color-stop(47%, #c29054), color-stop(84%, #f3d3a4));
+  background: linear-gradient(0deg, #f3d3a4 16%, #c29054 47%, #f3d3a4 84%);
   font-size: 13px;
   font-weight: bold;
-  color: #a9894e;
+  color: #252525;
   border-radius: 3px;
   padding: 0 8px;
 }
@@ -1328,13 +1337,14 @@ html body .filter .plsGo, html body .filter .plsGo2 {
   border-radius: 5px;
   overflow: hidden;
   display: none;
+  border: 1px solid #f3d3a4;
 }
 html body .filter .plsGo.display, html body .filter .plsGo2.display {
   display: block;
 }
 html body .filter .plsGo .content, html body .filter .plsGo2 .content {
   font-size: 14px;
-  color: #ffc266;
+  color: #f3d3a4;
   letter-spacing: 1px;
   font-weight: bold;
   width: 100%;
@@ -1486,19 +1496,19 @@ html body .filter .loginWindow form label input {
   background: #1c1c1c;
 }
 html body .filter .loginWindow form label input::-webkit-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .loginWindow form label input::-moz-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .loginWindow form label input:-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .loginWindow form label input::-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .loginWindow form label input::placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .loginWindow form label .eye {
   position: absolute;
@@ -1601,19 +1611,19 @@ html body .filter .forgetWindow form input {
   background: #1c1c1c;
 }
 html body .filter .forgetWindow form input::-webkit-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .forgetWindow form input::-moz-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .forgetWindow form input:-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .forgetWindow form input::-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .forgetWindow form input::placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .forgetWindow form button {
   width: 77.6vw;
@@ -1704,19 +1714,19 @@ html body .filter .registerWindow form label input {
   background: #1c1c1c;
 }
 html body .filter .registerWindow form label input::-webkit-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .registerWindow form label input::-moz-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .registerWindow form label input:-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .registerWindow form label input::-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .registerWindow form label input::placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .registerWindow form label.hasRemind {
   margin: 0;
@@ -1758,11 +1768,11 @@ html body .filter .registerWindow form label .cellphoneCheck {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 10px;
-  background: #ffffff;
-  border: solid 1px #a7854d;
+  background: #242424;
+  border: 1px solid #1aa34c;
   font-size: 13px;
   font-weight: bold;
-  color: #a7854d;
+  color: #13b165;
   border-radius: 3px;
 }
 html body .filter .registerWindow form .remind {
@@ -2063,19 +2073,19 @@ html body .filter .gameWindow form .row input {
   background: #1c1c1c;
 }
 html body .filter .gameWindow form .row input::-webkit-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .gameWindow form .row input::-moz-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .gameWindow form .row input:-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .gameWindow form .row input::-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .gameWindow form .row input::placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .gameWindow hr {
   border: solid 1px #f3d3a4;
@@ -2157,19 +2167,19 @@ html body .filter .phoneWindow form label input {
   background: #1c1c1c;
 }
 html body .filter .phoneWindow form label input::-webkit-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .phoneWindow form label input::-moz-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .phoneWindow form label input:-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .phoneWindow form label input::-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .phoneWindow form label input::placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .phoneWindow form label .cellphoneCheck {
   width: 23.2vw;
@@ -2179,11 +2189,11 @@ html body .filter .phoneWindow form label .cellphoneCheck {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 10px;
-  background: #ffffff;
-  border: solid 1px #a7854d;
+  background: #242424;
+  border: 1px solid #1aa34c;
   font-size: 13px;
   font-weight: bold;
-  color: #a7854d;
+  color: #13b165;
   border-radius: 3px;
 }
 html body .filter .phoneWindow form .remind {
@@ -2191,7 +2201,7 @@ html body .filter .phoneWindow form .remind {
   text-align: center;
   margin: 20px 0 0;
   font-size: 4vw;
-  color: #e11515;
+  color: #1fb26c;
   font-weight: bold;
 }
 html body .filter .phoneWindow form .checkBtn {
@@ -2358,19 +2368,19 @@ html body .filter .passwordWindow .content input {
   background: #1c1c1c;
 }
 html body .filter .passwordWindow .content input::-webkit-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .passwordWindow .content input::-moz-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .passwordWindow .content input:-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .passwordWindow .content input::-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .passwordWindow .content input::placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .filter .passwordWindow .content button {
   width: 77.6vw;
@@ -3161,6 +3171,7 @@ html body .walletWrap .walletBox {
   margin-bottom: 10px;
   background: #313131;
   padding-top: 25px;
+  border-bottom: 1px solid #f3d3a4;
 }
 html body .walletWrap .walletBox .gradient {
   width: 100%;
@@ -3301,6 +3312,7 @@ html body .walletWrap .walletList {
 html body .walletWrap .walletList .forPlatform {
   padding-bottom: 15px;
   display: none;
+  border-bottom: 1px solid #f3d3a4;
 }
 html body .walletWrap .walletList .forPlatform.display {
   display: block;
@@ -3325,6 +3337,7 @@ html body .walletWrap .walletList .forPlatform .title {
   letter-spacing: 1px;
   color: #0fc854;
   font-weight: bold;
+  border-top: 1px solid #f3d3a4;
 }
 html body .walletWrap .walletList .forPlatform .title button {
   width: 18.93vw;
@@ -3484,11 +3497,9 @@ html body .walletWrap .options {
   width: 92vw;
   height: 50px;
   margin: 0 auto 17px;
-  border: 1px solid #957222;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 2px 4px 0 #969696;
-          box-shadow: 0 2px 4px 0 #969696;
-  background: #ffffff;
+  border: 1px solid #a68257;
+  border-radius: 3px;
+  background: #313131;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3511,15 +3522,15 @@ html body .walletWrap .options p {
           align-items: center;
   font-size: 3.4vw;
   font-weight: bold;
-  color: #8a6a3a;
+  color: #f2bd7c;
   letter-spacing: 2px;
 }
 html body .walletWrap .options:active, html body .walletWrap .options.active {
-  border-color: #fff;
-  background: #957222;
+  border-color: #ffe5c7;
+  background: #fac98d;
 }
 html body .walletWrap .options:active p, html body .walletWrap .options.active p {
-  color: #ffffff;
+  color: #313131;
 }
 html body .walletWrap .options:active .betting_ic, html body .walletWrap .options:active .deal_ic, html body .walletWrap .options.active .betting_ic, html body .walletWrap .options.active .deal_ic {
   background-position-y: calc(100% - 1px);
@@ -3547,7 +3558,7 @@ html body .memberWrap {
   width: 100%;
   height: auto;
   min-height: calc(100% - 92px);
-  background: #f8f8f8;
+  background: #222;
   padding-bottom: 10px;
 }
 html body .memberWrap .user {
@@ -3556,6 +3567,7 @@ html body .memberWrap .user {
   margin-bottom: 10px;
   background: #313131;
   padding-bottom: 13px;
+  border-bottom: 1px solid #f3d3a4;
 }
 html body .memberWrap .user .info {
   display: -webkit-box;
@@ -3573,6 +3585,7 @@ html body .memberWrap .user .info {
           box-sizing: border-box;
   width: 100%;
   height: auto;
+  border-top: 1px solid #f3d3a4;
 }
 html body .memberWrap .user .info div .account {
   display: -webkit-box;
@@ -3609,7 +3622,7 @@ html body .memberWrap .user .info div .date {
   font-size: 13px;
   letter-spacing: 1px;
   font-weight: bold;
-  color: #0fc854;
+  color: #f2bd7c;
 }
 html body .memberWrap .user .info .infoBtn {
   width: auto;
@@ -3642,9 +3655,9 @@ html body .memberWrap .user .wallet {
 html body .memberWrap .user .wallet p {
   width: 64.53vw;
   height: 8.27vw;
-  background: #f2f3f3;
-  color: #000;
-  border-color: #957222;
+  background: #1c1c1c;
+  color: #f2bd7c;
+  border-color: #a68257;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3656,7 +3669,7 @@ html body .memberWrap .user .wallet p {
   padding-left: 16px;
   border-style: solid;
   border-width: 1px 0 1px 1px;
-  border-radius: 5vw 0 0 5vw;
+  border-radius: 3px 0 0 3px;
   font-size: 15px;
   letter-spacing: 1px;
   font-weight: bold;
@@ -3671,7 +3684,7 @@ html body .memberWrap .user .wallet button {
   color: #252525;
   border-radius: 3px;
   letter-spacing: 1px;
-  border-radius: 0 5vw 5vw 0;
+  border-radius: 0 3px 3px 0;
   font-size: 15px;
 }
 html body .memberWrap .user .wallet button:active, html body .memberWrap .user .wallet button.active {
@@ -3694,8 +3707,8 @@ html body .memberWrap .user .btnBox {
 html body .memberWrap .user .btnBox button {
   width: 49%;
   height: 18.4vw;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ffffff), to(#f4f4f4));
-  background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #c29155), to(#f3d3a4));
+  background: linear-gradient(0deg, #c29155 0, #f3d3a4);
   border: solid 1px #957222;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3707,12 +3720,19 @@ html body .memberWrap .user .btnBox button {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 5px;
-  color: #000000;
+  color: #2e2e2e;
   font-weight: bold;
 }
 html body .memberWrap .user .btnBox button:active, html body .memberWrap .user .btnBox button.active {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, #ffffff), to(#f4f4f4));
-  background: linear-gradient(to top, #ffffff 40%, #f4f4f4 100%);
+  color: #f3d3a4;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2e7b4a), to(#185f32));
+  background: linear-gradient(0deg, #2e7b4a 0, #185f32);
+}
+html body .memberWrap .user .btnBox button:active .wallet_ic {
+  background-position-y: 100%;
+}
+html body .memberWrap .user .btnBox button:active .vip_ic {
+  background-position-y: 100%;
 }
 html body .memberWrap .user .btnBox button .wallet_ic {
   display: block;
@@ -3730,12 +3750,10 @@ html body .memberWrap .user .btnBox button .text {
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #c0933e;
 }
 html body .memberWrap .user .btnBox button .text p {
   font-size: 12px;
   letter-spacing: 1px;
-  color: #f2bd7c;
   text-align: left;
 }
 html body .memberWrap .user ul {
@@ -3814,11 +3832,9 @@ html body .memberWrap .options {
   width: 92vw;
   height: 50px;
   margin: 0 auto 17px;
-  border: 1px solid #957222;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 2px 4px 0 #969696;
-          box-shadow: 0 2px 4px 0 #969696;
-  background: #ffffff;
+  border: 1px solid #a68257;
+  border-radius: 3px;
+  background: #313131;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3841,15 +3857,15 @@ html body .memberWrap .options p {
           align-items: center;
   font-size: 3.4vw;
   font-weight: bold;
-  color: #8a6a3a;
+  color: #f2bd7c;
   letter-spacing: 2px;
 }
 html body .memberWrap .options:active, html body .memberWrap .options.active {
-  border-color: #fff;
-  background: #957222;
+  border-color: #ffe5c7;
+  background: #fac98d;
 }
 html body .memberWrap .options:active p, html body .memberWrap .options.active p {
-  color: #ffffff;
+  color: #313131;
 }
 html body .memberWrap .options.opLang span {
   display: none;
@@ -3908,6 +3924,7 @@ html body .memberList ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-bottom: 1px solid #f3d3a4;
 }
 html body .memberList ul li {
   width: 50%;
@@ -3939,7 +3956,7 @@ html body .memberInfo {
   padding: 10px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #f8f8f8;
+  background: #222;
 }
 html body .memberInfo form {
   width: 100%;
@@ -3948,7 +3965,7 @@ html body .memberInfo form {
 html body .memberInfo form ul {
   width: 100%;
   height: auto;
-  background: #313131;
+  background: #222;
   padding-bottom: 12px;
 }
 html body .memberInfo form ul li {
@@ -3968,7 +3985,7 @@ html body .memberInfo form ul li {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 17px;
-  border-bottom: solid 1px #f3d3a4;
+  border-top: solid 1px #b18e56;
 }
 html body .memberInfo form ul li.active {
   height: 103px;
@@ -3982,7 +3999,7 @@ html body .memberInfo form ul li em {
 }
 html body .memberInfo form ul li em::before {
   content: "※ ";
-  color: #e11515;
+  color: #f3d3a4;
   padding: 0 5px 0 0;
   font-size: 14px;
 }
@@ -3993,7 +4010,7 @@ html body .memberInfo form ul li span {
   color: #f3d3a4;
 }
 html body .memberInfo form ul li input {
-  width: 64vw;
+  width: 53vw;
   height: 42px;
   text-align: right;
   border: solid 1px transparent;
@@ -4002,22 +4019,22 @@ html body .memberInfo form ul li input {
   font-weight: bold;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #000000;
+  color: #f2bd7c;
 }
 html body .memberInfo form ul li input::-webkit-input-placeholder {
-  color: #848484;
+  color: #229f50;
 }
 html body .memberInfo form ul li input::-moz-placeholder {
-  color: #848484;
+  color: #229f50;
 }
 html body .memberInfo form ul li input:-ms-input-placeholder {
-  color: #848484;
+  color: #229f50;
 }
 html body .memberInfo form ul li input::-ms-input-placeholder {
-  color: #848484;
+  color: #229f50;
 }
 html body .memberInfo form ul li input::placeholder {
-  color: #848484;
+  color: #229f50;
 }
 html body .memberInfo form ul li input.active {
   background: #ffffff;
@@ -4044,11 +4061,46 @@ html body .memberInfo form ul li button:active, html body .memberInfo form ul li
   color: #f3d3a4;
   border: 1px solid #dcab70;
 }
+html body .memberInfo form ul li .li_box {
+  width: 69%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .memberInfo form ul li .li_box .smallbutton {
+  width: 47px;
+  height: 29px;
+  font-size: 13px;
+  background: #242424;
+  border: 1px solid #1aa34c;
+  font-size: 13px;
+  font-weight: bold;
+  color: #13b165;
+  border-radius: 3px;
+  display: block;
+}
+html body .memberInfo form ul li .li_box p {
+  padding: 0 5px;
+  color: #f2bd7c;
+}
+html body .memberInfo form ul li .qr-img {
+  width: 23vw;
+  height: 23vw;
+  margin-top: 15px;
+}
 html body .memberInfo form ul .saveBtn {
   display: block;
   width: 92vw;
   height: 42px;
-  margin: 12px auto 0;
+  margin: 12px auto 7px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(16%, #f3d3a4), color-stop(47%, #c29054), color-stop(84%, #f3d3a4));
   background: linear-gradient(0deg, #f3d3a4 16%, #c29054 47%, #f3d3a4 84%);
   font-size: 4vw;
@@ -4068,6 +4120,10 @@ html body .memberInfo .info_1, html body .memberInfo .info_2 {
   height: auto;
   margin: 10px 0;
 }
+html body .memberInfo .info_1.info_2, html body .memberInfo .info_2.info_2 {
+  margin: 62px 0;
+  border-top: 1px solid #b18e56;
+}
 html body .memberInfo .info_1.info_2 span, html body .memberInfo .info_2.info_2 span {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4079,10 +4135,13 @@ html body .memberInfo .info_1.info_2 span, html body .memberInfo .info_2.info_2 
 html body .memberInfo .info_1.info_2 span:nth-of-type(1), html body .memberInfo .info_2.info_2 span:nth-of-type(1) {
   width: 30vw;
 }
+html body .memberInfo .info_1.info_2 ul li:nth-of-type(1), html body .memberInfo .info_2.info_2 ul li:nth-of-type(1) {
+  height: 17vw;
+}
 html body .memberInfo .info_1 ul, html body .memberInfo .info_2 ul {
   width: 100%;
   height: auto;
-  background: #313131;
+  background: #222;
 }
 html body .memberInfo .info_1 ul li, html body .memberInfo .info_2 ul li {
   width: 100%;
@@ -4126,11 +4185,11 @@ html body .memberInfo .info_1 ul li span input, html body .memberInfo .info_2 ul
 html body .memberInfo .info_1 ul li span .copy, html body .memberInfo .info_2 ul li span .copy {
   width: 47px;
   height: 29px;
-  background: #ffffff;
-  border: solid 1px #a7854d;
+  background: #242424;
+  border: 1px solid #1aa34c;
   font-size: 13px;
   font-weight: bold;
-  color: #a7854d;
+  color: #13b165;
   border-radius: 3px;
   margin-left: 15px;
 }
@@ -4168,9 +4227,9 @@ html body .memberInfo .info_1 ul li .qrCode, html body .memberInfo .info_2 ul li
 html body .memberInfo .info_1 ul li .security, html body .memberInfo .info_2 ul li .security {
   width: 100%;
   height: 40px;
-  background: #fffcf5;
-  border: solid 1px #ffe5cd;
-  color: #4d4d4d;
+  background: #343434;
+  border: 1px solid #f9d2a2;
+  color: #f3d3a4;
   font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4206,7 +4265,6 @@ html body .memberPlatform {
   padding: 10px 4vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #f8f8f8;
 }
 html body .memberPlatform .platformBox {
   width: 100%;
@@ -4225,7 +4283,7 @@ html body .memberPlatform .platformBox .title {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 17px;
-  color: #c0933e;
+  color: #f3d3a4;
   font-size: 14px;
   font-weight: bold;
   display: -webkit-box;
@@ -4268,11 +4326,11 @@ html body .memberPlatform .platformBox .content li p button {
   width: 49px;
   height: 28px;
   margin-left: 10px;
-  background: #ffffff;
-  border: solid 1px #a7854d;
+  background: #242424;
+  border: 1px solid #1aa34c;
   font-size: 13px;
   font-weight: bold;
-  color: #a7854d;
+  color: #13b165;
   border-radius: 3px;
 }
 html body .memberPlatform .platformBox .content li p button.un {
@@ -4479,13 +4537,13 @@ html body .helpInner ul li .textBox p {
   line-height: 22px;
   font-size: 14px;
   font-weight: bold;
-  color: #4d4d4d;
+  color: #f2bd7c;
   margin-bottom: 8px;
 }
 html body .helpInner ul li .textBox p.smallTitle {
-  font-size: 18px;
+  font-size: 16px;
   margin: 20px 0 10px;
-  color: #171717;
+  color: #f3d3a4;
   text-align: left;
 }
 html body .helpInner ul li .textBox p.smallTitle.first {
@@ -4493,7 +4551,7 @@ html body .helpInner ul li .textBox p.smallTitle.first {
 }
 html body .helpInner ul li .textBox p.platform {
   font-size: 18px;
-  color: #171717;
+  color: #f3d3a4;
   margin: 15px 0;
   text-align: center;
 }
@@ -4520,6 +4578,60 @@ html body .helpInner ul li .textBox .img.remote {
 html body .helpInner ul li .textBox .img.license {
   padding-top: 134%;
 }
+html body .helpInner ul li .textBox .btnBox1 {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+html body .helpInner ul li .textBox .btnBox1 div {
+  width: 100%;
+  height: 97px;
+  position: relative;
+  margin-bottom: 15px;
+  background: #313131;
+  border: 1px solid #f9d2a2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 15px 25px 18vw;
+  border-radius: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .helpInner ul li .textBox .btnBox1 div span {
+  color: #b37c37;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+html body .helpInner ul li .textBox .btnBox1 div p {
+  color: #f2bd7c;
+}
+html body .helpInner ul li .textBox .btnBox1 div i {
+  display: block;
+  position: absolute;
+  width: 8.7vw;
+  height: 8.7vw;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 5.5vw;
+}
+html body .helpInner ul li .textBox .btnBox1 div p {
+  font-size: 3.4vw;
+  font-weight: bold;
+  margin: 0;
+}
+html body .helpInner ul li .textBox .btnBox1 div p:nth-of-type(1) {
+  font-size: 5vw;
+}
 html body .helpInner ul li .textBox .btnBox {
   width: 100%;
   height: auto;
@@ -4527,13 +4639,11 @@ html body .helpInner ul li .textBox .btnBox {
 }
 html body .helpInner ul li .textBox .btnBox div {
   width: 100%;
-  height: 105px;
+  height: 97px;
   position: relative;
   margin-bottom: 15px;
-  background: #ffffff;
-  border: solid 1px #00b900;
-  -webkit-box-shadow: 3px 3px 3px 0 #c5c5c5;
-          box-shadow: 3px 3px 3px 0 #c5c5c5;
+  background: #313131;
+  border: solid 1px #1eba57;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4550,7 +4660,7 @@ html body .helpInner ul li .textBox .btnBox div {
           justify-content: space-between;
 }
 html body .helpInner ul li .textBox .btnBox div p {
-  color: #00b900;
+  color: #11d36c;
 }
 html body .helpInner ul li .textBox .btnBox div i {
   display: block;
@@ -4751,7 +4861,7 @@ html body .applyList .listBox .list ul li p em {
   color: #e11515;
 }
 html body .applyList .listBox .list ul li p em.sp {
-  color: #19a24b;
+  color: #1fb26c;
 }
 html body .applyList .listBox .list .btnBox {
   width: 100%;
@@ -4787,11 +4897,11 @@ html body .applyList .listBox .list .btnBox button.applyBtn:active, html body .a
   border: 1px solid #dcab70;
 }
 html body .applyList .listBox .list .btnBox button.checkBtn {
-  background: #ffffff;
-  border: solid 1px #a7854d;
+  background: #242424;
+  border: 1px solid #1aa34c;
   font-size: 13px;
   font-weight: bold;
-  color: #a7854d;
+  color: #13b165;
   border-radius: 3px;
   font-size: 16px;
 }
@@ -4839,19 +4949,19 @@ html body .applyRecord .searchContain form ul li p {
 html body .applyRecord .searchContain form ul li select {
   width: 100%;
   height: 42px;
-  background-color: #ffffff;
+  background-color: #252525;
   border-radius: 3px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   font-size: 15px;
   font-weight: bold;
-  color: #000000;
-  background-image: linear-gradient(45deg, transparent 50%, #957222 0), linear-gradient(135deg, #957222 50%, transparent 0);
+  color: #f2bd7c;
+  background-image: linear-gradient(45deg, transparent 50%, #229f50 0), linear-gradient(135deg, #229f50 50%, transparent 0);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
   background-size: 5px 5px, 5px 5px;
   background-repeat: no-repeat;
-  border: solid 1px #957222;
+  border: 1px solid #a7854d;
   padding-left: 15px;
 }
 html body .applyRecord .searchContain form ul li .inputBox {
@@ -5344,11 +5454,9 @@ html body .vipWrap .enjoyBox ul s {
 html body .vipWrap .checkBtn {
   width: 92%;
   height: 50px;
-  border: 1px solid #957222;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 2px 4px 0 #969696;
-          box-shadow: 0 2px 4px 0 #969696;
-  background: #ffffff;
+  border: 1px solid #a68257;
+  border-radius: 3px;
+  background: #313131;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5373,15 +5481,15 @@ html body .vipWrap .checkBtn p {
           align-items: center;
   font-size: 3.4vw;
   font-weight: bold;
-  color: #8a6a3a;
+  color: #f2bd7c;
   letter-spacing: 2px;
 }
 html body .vipWrap .checkBtn:active, html body .vipWrap .checkBtn.active {
-  border-color: #fff;
-  background: #957222;
+  border-color: #ffe5c7;
+  background: #fac98d;
 }
 html body .vipWrap .checkBtn:active p, html body .vipWrap .checkBtn.active p {
-  color: #ffffff;
+  color: #313131;
 }
 html body .vipWrap .checkBtn .arrow_ic {
   display: block;
@@ -6264,19 +6372,19 @@ html body .cardContent ul li input {
   background: #1c1c1c;
 }
 html body .cardContent ul li input::-webkit-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .cardContent ul li input::-moz-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .cardContent ul li input:-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .cardContent ul li input::-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .cardContent ul li input::placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .cardContent ul li .remind {
   margin-top: 5px;
@@ -6456,19 +6564,19 @@ html body .bettingWrap .searchContent .top .full .selectBox {
 html body .bettingWrap .searchContent .top .full .selectBox select {
   width: 100%;
   height: 42px;
-  background-color: #ffffff;
+  background-color: #252525;
   border-radius: 3px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   font-size: 15px;
   font-weight: bold;
-  color: #000000;
-  background-image: linear-gradient(45deg, transparent 50%, #957222 0), linear-gradient(135deg, #957222 50%, transparent 0);
+  color: #f2bd7c;
+  background-image: linear-gradient(45deg, transparent 50%, #229f50 0), linear-gradient(135deg, #229f50 50%, transparent 0);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
   background-size: 5px 5px, 5px 5px;
   background-repeat: no-repeat;
-  border: solid 1px #957222;
+  border: 1px solid #a7854d;
   padding-left: 15px;
 }
 html body .bettingWrap .searchContent .date {
@@ -6589,11 +6697,11 @@ html body .bettingWrap .list .recordBox .title .date {
 html body .bettingWrap .list .recordBox .title button {
   width: 80px;
   height: 26px;
-  background: #ffffff;
-  border: solid 1px #a7854d;
+  background: #242424;
+  border: 1px solid #1aa34c;
   font-size: 13px;
   font-weight: bold;
-  color: #a7854d;
+  color: #13b165;
   border-radius: 3px;
 }
 html body .bettingWrap .list .recordBox ul {
@@ -6629,7 +6737,7 @@ html body .bettingWrap .list .recordBox ul li p.num.win {
   color: #e11515;
 }
 html body .bettingWrap .list .recordBox ul li p.num.lose {
-  color: #19a24b;
+  color: #1fb26c;
 }
 html body .bettingWrap.deal {
   padding: 0;
@@ -6737,14 +6845,14 @@ html body .waterBox ul li p span:last-child {
   color: #ffc266;
 }
 html body .waterBox ul li p span.sp {
-  color: #19a24b;
+  color: #1fb26c;
 }
 html body .waterBox ul li .remindBox {
   width: calc(100% - 28px);
   height: 42px;
-  background: #fffcf5;
-  border: solid 1px #ffe5cd;
-  color: #4d4d4d;
+  background: #343434;
+  border: 1px solid #f9d2a2;
+  color: #f3d3a4;
   font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6790,11 +6898,11 @@ html body .waterBox ul li .btnBox button {
   height: 38px;
 }
 html body .waterBox ul li .btnBox button:nth-of-type(1) {
-  background: #ffffff;
-  border: solid 1px #a7854d;
+  background: #242424;
+  border: 1px solid #1aa34c;
   font-size: 13px;
   font-weight: bold;
-  color: #a7854d;
+  color: #13b165;
   border-radius: 3px;
   font-size: 14px;
 }
@@ -6817,7 +6925,7 @@ html body .waterBox ul li .btnBox button:last-child:active, html body .waterBox 
 html body .depositWrap {
   width: 100%;
   height: calc(100vh - 125px);
-  background: #f8f8f8;
+  background: transparent;
   overflow-y: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -6832,6 +6940,8 @@ html body .depositWrap .depList {
   display: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-top: 1px solid #f3d3a4;
+  border-bottom: 1px solid #f3d3a4;
 }
 html body .depositWrap .depList.display {
   display: block;
@@ -6839,7 +6949,7 @@ html body .depositWrap .depList.display {
 html body .depositWrap .depList .title {
   font-size: 15px;
   letter-spacing: 1px;
-  color: #f3d3a4;
+  color: #f2bd7c;
   font-weight: bold;
 }
 html body .depositWrap .depList .listWrap {
@@ -6860,9 +6970,8 @@ html body .depositWrap .depList .listWrap ul li {
   width: 22.4vw;
   height: 19.2vw;
   margin-right: 5px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ffffff), to(#f4f4f4));
-  background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
-  border: solid 1px #957222;
+  background: linear-gradient(135deg, transparent, transparent 85%, #dcab70 0, #dcab70);
+  border: 2px solid #dcab70;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6876,8 +6985,8 @@ html body .depositWrap .depList .listWrap ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 5px;
-  color: #000000;
+  border-radius: 3px;
+  color: #f2bd7c;
   font-weight: bold;
   position: relative;
   overflow: hidden;
@@ -6945,26 +7054,26 @@ html body .depositWrap .depContent .title span {
 html body .depositWrap .depContent select {
   width: 100%;
   height: 42px;
-  background-color: #ffffff;
+  background-color: #252525;
   border-radius: 3px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   font-size: 15px;
   font-weight: bold;
-  color: #000000;
-  background-image: linear-gradient(45deg, transparent 50%, #957222 0), linear-gradient(135deg, #957222 50%, transparent 0);
+  color: #f2bd7c;
+  background-image: linear-gradient(45deg, transparent 50%, #229f50 0), linear-gradient(135deg, #229f50 50%, transparent 0);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
   background-size: 5px 5px, 5px 5px;
   background-repeat: no-repeat;
-  border: solid 1px #957222;
+  border: 1px solid #a7854d;
   padding-left: 15px;
   margin-bottom: 15px;
 }
 html body .depositWrap .depContent .remind {
   font-size: 12px;
   font-weight: bold;
-  color: #e11515;
+  color: #1fb26c;
   padding-top: 3px;
 }
 html body .depositWrap .depContent .remind .num {
@@ -6985,19 +7094,19 @@ html body .depositWrap .depContent input {
   background: #1c1c1c;
 }
 html body .depositWrap .depContent input::-webkit-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .depositWrap .depContent input::-moz-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .depositWrap .depContent input:-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .depositWrap .depContent input::-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .depositWrap .depContent input::placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .depositWrap .depContent .check {
   width: 100%;
@@ -7018,7 +7127,9 @@ html body .depositWrap .depContent .check:active, html body .depositWrap .depCon
   border: 1px solid #dcab70;
 }
 html body .depositWrap .depContent.already .title {
-  color: #c0933e;
+  color: #f3d3a4;
+  font-size: 15px;
+  letter-spacing: 1px;
 }
 html body .depositWrap .depContent.already ul {
   width: 100%;
@@ -7040,10 +7151,10 @@ html body .depositWrap .depContent.already ul li {
 html body .depositWrap .depContent.already ul li p {
   font-size: 14px;
   font-weight: bold;
-  color: #ffc266;
+  color: #0fc854;
 }
 html body .depositWrap .depContent.already ul li p.smallTitle {
-  color: #f3d3a4;
+  color: #ffc266;
   margin-right: 30px;
 }
 html body .depositWrap .depContent.already ul li p button {
@@ -7052,11 +7163,11 @@ html body .depositWrap .depContent.already ul li p button {
   margin-left: 10px;
 }
 html body .depositWrap .depContent.already ul li p button.copy {
-  background: #ffffff;
-  border: solid 1px #a7854d;
+  background: #242424;
+  border: 1px solid #1aa34c;
   font-size: 13px;
   font-weight: bold;
-  color: #a7854d;
+  color: #13b165;
   border-radius: 3px;
   font-size: 14px;
 }
@@ -7079,9 +7190,9 @@ html body .depositWrap .depContent.already ul li p button.change:active, html bo
 html body .depositWrap .depContent.already ul li .checkBox {
   width: 95%;
   height: auto;
-  background: #fffcf5;
-  border: solid 1px #ffe5cd;
-  color: #4d4d4d;
+  background: #222;
+  border: 1px solid #f3d3a4;
+  color: #f3d3a4;
   font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7104,17 +7215,8 @@ html body .depositWrap .depContent.already ul li .checkBox {
           flex-direction: column;
   margin: 0 auto;
 }
-html body .depositWrap .depContent.already ul li .checkBox .low {
-  color: #ff0000;
-}
-html body .depositWrap .depContent.already ul li .checkBox .middle {
-  color: #ff8600;
-}
-html body .depositWrap .depContent.already ul li .checkBox .high {
-  color: #009245;
-}
 html body .depositWrap .depContent.already ul li .checkBox p {
-  color: #e11515;
+  color: #ffc266;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7125,7 +7227,7 @@ html body .depositWrap .depContent.already ul li .checkBox p {
 html body .depositWrap .depContent.already ul li .checkBox p:nth-of-type(1) {
   font-size: 38px;
   margin-bottom: 10px;
-  color: #000000;
+  color: #f3d3a4;
 }
 html body .depositWrap .depContent.already ul li .check {
   margin: 0;
@@ -7134,8 +7236,8 @@ html body .depositWrap .remindBox {
   width: 92.27vw;
   height: auto;
   margin: 0 auto;
-  background: #fcf9f3;
-  border: 1px solid #ece0d2;
+  background: #313131;
+  border: 1px solid #f9d2a2;
   border-radius: 3px;
   padding: 14px 15px;
   -webkit-box-sizing: border-box;
@@ -7143,7 +7245,7 @@ html body .depositWrap .remindBox {
 }
 html body .depositWrap .remindBox p {
   font-size: 12px;
-  color: #f2bd7c;
+  color: #ffc266;
   font-weight: bold;
   line-height: 18px;
   margin-bottom: 8px;
@@ -7152,10 +7254,10 @@ html body .depositWrap .remindBox p.title {
   margin-bottom: 10px;
   font-size: 14px;
   letter-spacing: 1px;
-  color: #c0933e;
+  color: #1fb26c;
 }
 html body .depositWrap .remindBox p .sp {
-  color: #f2bd7c;
+  color: #ffc266;
 }
 html body .transWrap {
   width: 100%;
@@ -7254,19 +7356,19 @@ html body .transWrap .transBox .selectBox {
 html body .transWrap .transBox .selectBox select {
   width: 100%;
   height: 42px;
-  background-color: #ffffff;
+  background-color: #252525;
   border-radius: 3px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   font-size: 15px;
   font-weight: bold;
-  color: #000000;
-  background-image: linear-gradient(45deg, transparent 50%, #957222 0), linear-gradient(135deg, #957222 50%, transparent 0);
+  color: #f2bd7c;
+  background-image: linear-gradient(45deg, transparent 50%, #229f50 0), linear-gradient(135deg, #229f50 50%, transparent 0);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
   background-size: 5px 5px, 5px 5px;
   background-repeat: no-repeat;
-  border: solid 1px #957222;
+  border: 1px solid #a7854d;
   padding-left: 15px;
   padding-left: 12vw;
   font-size: 14px;
@@ -7297,19 +7399,19 @@ html body .transWrap .transBox input {
   background: #1c1c1c;
 }
 html body .transWrap .transBox input::-webkit-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .transWrap .transBox input::-moz-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .transWrap .transBox input:-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .transWrap .transBox input::-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .transWrap .transBox input::placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .transWrap .transBox .check {
   width: 100%;
@@ -7790,9 +7892,9 @@ html body .withWrap .withContent .remind {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
-  background: #fffcf5;
-  border: solid 1px #ffe5cd;
-  color: #4d4d4d;
+  background: #343434;
+  border: 1px solid #f9d2a2;
+  color: #f3d3a4;
   font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7824,19 +7926,19 @@ html body .withWrap .withContent .remind .high {
 html body .withWrap .withContent select {
   width: 100%;
   height: 42px;
-  background-color: #ffffff;
+  background-color: #252525;
   border-radius: 3px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   font-size: 15px;
   font-weight: bold;
-  color: #000000;
-  background-image: linear-gradient(45deg, transparent 50%, #957222 0), linear-gradient(135deg, #957222 50%, transparent 0);
+  color: #f2bd7c;
+  background-image: linear-gradient(45deg, transparent 50%, #229f50 0), linear-gradient(135deg, #229f50 50%, transparent 0);
   background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
   background-size: 5px 5px, 5px 5px;
   background-repeat: no-repeat;
-  border: solid 1px #957222;
+  border: 1px solid #a7854d;
   padding-left: 15px;
 }
 html body .withWrap .withContent .smallRemind {
@@ -7861,19 +7963,19 @@ html body .withWrap .withContent input {
   background: #1c1c1c;
 }
 html body .withWrap .withContent input::-webkit-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .withWrap .withContent input::-moz-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .withWrap .withContent input:-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .withWrap .withContent input::-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .withWrap .withContent input::placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .withWrap .withContent .check {
   width: 100%;
@@ -7897,8 +7999,8 @@ html body .withWrap .remindBox {
   width: 92.27vw;
   height: auto;
   margin: 10px auto 0;
-  background: #fcf9f3;
-  border: 1px solid #ece0d2;
+  background: #313131;
+  border: 1px solid #f9d2a2;
   border-radius: 3px;
   padding: 14px 15px;
   -webkit-box-sizing: border-box;
@@ -7975,11 +8077,11 @@ html body .inviteWrap .info_1 ul li span input {
 html body .inviteWrap .info_1 ul li span .copy {
   width: 47px;
   height: 29px;
-  background: #ffffff;
-  border: solid 1px #a7854d;
+  background: #242424;
+  border: 1px solid #1aa34c;
   font-size: 13px;
   font-weight: bold;
-  color: #a7854d;
+  color: #13b165;
   border-radius: 3px;
   margin-left: 15px;
 }
@@ -8017,9 +8119,9 @@ html body .inviteWrap .info_1 ul li .qrCode {
 html body .inviteWrap .info_1 ul li .security {
   width: 100%;
   height: 40px;
-  background: #fffcf5;
-  border: solid 1px #ffe5cd;
-  color: #4d4d4d;
+  background: #343434;
+  border: 1px solid #f9d2a2;
+  color: #f3d3a4;
   font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;

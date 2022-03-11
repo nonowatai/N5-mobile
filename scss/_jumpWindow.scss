@@ -46,6 +46,7 @@
         border-radius: 5px;
         overflow: hidden;
         display: none;
+        border: 1px solid $mainBorder_1;
 
         &.display {
             display: block;
@@ -53,7 +54,7 @@
 
         .content {
             font-size: 14px;
-            color: $mainWord_1;
+            color: $title_2;
             letter-spacing: 1px;
             font-weight: bold;
             width: 100%;
@@ -679,7 +680,7 @@
                 text-align: center;
                 margin: 20px 0 0;
                 font-size: 4vw;
-                color: $remind;
+                color: $remind_Sp;
                 font-weight: bold;
             }
 

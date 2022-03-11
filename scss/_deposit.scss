@@ -2,7 +2,7 @@
 .depositWrap {
     width: 100%;
     height: calc(100vh - 125px);
-    background: $mainBG_2;
+    background: transparent;
     overflow-y: auto;
     box-sizing: border-box;
     padding: 10px 0;
@@ -15,6 +15,8 @@
         margin-bottom: 10px;
         display: none;
         box-sizing: border-box;
+        border-top: 1px solid $mainBorder_1;
+        border-bottom: 1px solid $mainBorder_1;
 
         &.display {
             display: block;
@@ -23,7 +25,7 @@
         .title {
             font-size: 15px;
             letter-spacing: 1px;
-            color: $title_2;
+            color: $title_3;
             font-weight: bold;
         }
 
@@ -102,7 +104,7 @@
         .remind {
             font-size: 12px;
             font-weight: bold;
-            color: $remind;
+            color: $remind_Sp;
             padding-top: 3px;
 
             .num {
@@ -126,7 +128,10 @@
         &.already {
             
             .title {
-                color: $title_1;
+                color: $title_2;
+                font-size: 15px;
+                letter-spacing: 1px;
+                
             }
 
             ul {
@@ -144,10 +149,10 @@
                     p {
                         font-size: 14px;
                         font-weight: bold;
-                        color: $mainWord_1;
+                        color: $title_Time;
 
                         &.smallTitle {
-                            color: $title_2;
+                            color: $mainWord_1;
                             margin-right: 30px;
                         }
 
@@ -171,20 +176,30 @@
                     .checkBox {
                         width: 95%;
                         height: auto;
-                        @include wordBox;
+                        background: $mainBG_3;
+                        border: 1px solid $mainBorder_1;
+                        color: $title_2;
+                        font-size: 14px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        box-sizing: border-box;
+                        padding: 0 20px;
+                        border-radius: 5px;
+                        font-weight: bold;
                         padding: 15px 0;
                         flex-direction: column;
                         margin: 0 auto;
 
                         p {
-                            color: $remind;
+                            color: $mainWord_1;
                             display: flex;
                             align-items: center;
 
                             &:nth-of-type(1) {
                                 font-size: 38px;
                                 margin-bottom: 10px;
-                                color: $money;
+                                color:$title_2;
                             }
                         }
                     }
@@ -205,7 +220,7 @@
 
         p {
             font-size: 12px;
-            color: $title_3;
+            color: $mainWord_1;
             font-weight: bold;
             line-height: 18px;
             margin-bottom: 8px;
@@ -214,11 +229,11 @@
                 margin-bottom: 10px;
                 font-size: 14px;
                 letter-spacing: 1px;
-                color: $title_1;
+                color: $remind_Sp;
             }
 
             .sp {
-                color: $title_3;
+                color: $mainWord_1;
             }
         }
     }
