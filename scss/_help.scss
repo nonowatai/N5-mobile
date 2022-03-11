@@ -147,7 +147,7 @@
                 .icon {
                     display: block;
                     width: 15px;
-                    height: 15px;
+                    height: 20px;
                     margin: 0 4vw;
                     flex-shrink: 0;
                 }
@@ -166,7 +166,7 @@
                     width: 100%;
                     font-size: 14px;
                     font-weight: bold;
-                    color: $title_1;
+                    color: $title_2;
                 }
             }
 
@@ -179,7 +179,7 @@
                 margin: 0 auto;
                 border: solid 1px $mainBorder_2;
                 border-top: none;
-                background: $mainBG_1;
+                background: $mainBG_3;
                 border-radius: 0 0 5px 5px;
 
                 &.app {

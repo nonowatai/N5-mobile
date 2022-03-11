@@ -251,11 +251,6 @@ header .editBtn {
   background-size: contain;
 }
 
-.helpInner .img.depositWay {
-  background: url("../images/說明圖/withdraw.png") no-repeat;
-  background-size: 100%;
-}
-
 .helpInner .img.deposit_water {
   background: url("../images/說明圖/online01.png") no-repeat;
   background-size: 100%;
@@ -4493,7 +4488,7 @@ html body .helpInner ul li .title {
 html body .helpInner ul li .title .icon {
   display: block;
   width: 15px;
-  height: 15px;
+  height: 20px;
   margin: 0 4vw;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -4514,7 +4509,7 @@ html body .helpInner ul li .title p {
   width: 100%;
   font-size: 14px;
   font-weight: bold;
-  color: #c0933e;
+  color: #f3d3a4;
 }
 html body .helpInner ul li .textBox {
   display: none;
@@ -4526,7 +4521,7 @@ html body .helpInner ul li .textBox {
   margin: 0 auto;
   border: solid 1px #b18e56;
   border-top: none;
-  background: #313131;
+  background: #222;
   border-radius: 0 0 5px 5px;
 }
 html body .helpInner ul li .textBox.app {
@@ -5171,9 +5166,7 @@ html body .vipWrap .topBox .board {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 4vw 7.46vw;
-  border-radius: 0 0 40px 40px;
-  -webkit-box-shadow: 0 0 13px 2px #dedede;
-          box-shadow: 0 0 13px 2px #dedede;
+  border-bottom: 1px solid #f3d3a4;
   background: #313131;
   margin-bottom: 6.66vw;
 }
