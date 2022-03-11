@@ -1,9 +1,10 @@
 //主色系
-$mainBG_1: #ffffff;
+$mainBG_1: #313131;
 $mainBG_2: #f8f8f8;
+$mainBG_3: #222;
 
 //主要字色
-$mainWord_1: #000000;
+$mainWord_1: #ffc266;
 
 //主要邊框色
 $mainBorder_1: #f3d3a4;
@@ -11,38 +12,39 @@ $mainBorder_2: #b18e56;
 
 //金額色
 $money: #000000;
-$money_Sp: #e11515;
+$money_Sp: #19a24b;
 
 //可選字色
 $click: #af8c50;
 
 //小提示字色
 $remind: #e11515;
-$remind_Sp: #009245;
+$remind_Sp: #19a24b;
 
 //大選項字色
-$optionColor: #4d4d4d;
+$optionColor: #f2bd7c;
 
 //標題字
 $title_1: #c0933e;
 $title_2: #f3d3a4;
-$title_3: #666;
-$title_Time: #999;
+$title_3: #f2bd7c;
+$title_Time: #0fc854;
 $title_Header: #f3d3a4;
 
 //選擇列字色+選擇列active
-$choose_Word: #848484;
-$choose_ActiveWord: #231815;
-$choose_Border: #c7a16e;
+$choose_Word: #f2bd7c;
+$choose_ActiveWord: #0fc854;
+$choose_Border: #0fc854;
 
 //陰影色
 $boxshadow_1: #dedede;
 $boxshadow_2: #c8c8c880;
 
 //跑馬燈字色
-$marqueeColor: #4d4d4d;
+$marqueeColor: #f3d3a4;
+$marqueeBorder:  #f1d1a2;
 //跑馬燈背景
-$marqueeIcon: linear-gradient(to top,#fae0af 0%,#d7b676 50%,#f8fbc0 100%);
+$marqueeIcon: linear-gradient(0deg,#343434 0,#1d1d1d);
 //跑馬燈陰影色
 $marqueeBoxshadow: #ede5d7;
 
@@ -540,8 +542,9 @@ $slotGame_Word: #4d4d4d;
     letter-spacing: 1px;
 
     &:active,&.active {
-        background: linear-gradient(to top,#e8cb8e 0,#a17d44 100%);
-        color: #ffffff;
+        background: linear-gradient(0deg,#2f845c 0,#1d5832);
+        color: #f3d3a4;
+        border: 1px solid #dcab70;
     }
 }
 

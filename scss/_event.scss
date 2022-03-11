@@ -3,10 +3,11 @@
     width: 100%;
     height: auto;
     overflow-x: auto;
-    background: $mainBG_1;
+    background: transparent;
 
     ul {
         display: flex;
+        border-bottom: 1px solid $mainBorder_1;
 
         li {
             width: 22.4vw;
@@ -48,7 +49,7 @@
     overflow-y: auto;
     box-sizing: border-box;
     padding: 10px 14px 0;
-    background: $mainBG_2;
+    background: transparent;
 
     ul {
         display: flex;
@@ -63,9 +64,9 @@
                 width: 100%;
                 height: auto;
                 background: $mainBG_1;
-                border-radius: 1.5vw;
+                border-radius: 3px;
                 overflow: hidden;
-                border: solid 1px $mainBorder_2;
+                border: solid 1px $mainBorder_1;
 
                 .eventImg {
                     background: $mainBG_2;
@@ -85,8 +86,9 @@
 
                     button {
                         width: 82px;
-                        min-height: 21px;
-                        @include checkEvent;
+                        min-height: 23px;
+                        @include mainBtn;
+                        font-size: 3vw;
                     }
                 }
             }
@@ -102,7 +104,7 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 15px;
-    background: $mainBG_2;
+    background: transparent;
     overflow-y: auto;
 
     .eventImg {
@@ -117,8 +119,8 @@
         padding: 10px 15px 15px;
         margin-top: 10px;
         background: $mainBG_1;
+        border: 1px solid $mainBorder_1;
         border-radius: 5px;
-        box-shadow: 0 0 5px 0 $boxshadow_2;
 
         ul {
 
@@ -131,20 +133,19 @@
                 font-size: 16px;
                 font-weight: bold;
                 margin-bottom: 10px;
-                color: $title_1;
+                color: $title_2;
             }
 
             ul {
                 list-style: disc;
-                width: 90%;
+                width: 96%;
                 margin: 0 auto;
 
                 li {
-                    font-size: 14px;
+                    font-size: 16px;
                     font-weight: bold;
                     color: $mainWord_1;
                     margin-top: 20px;
-                    color: $title_2;
                     line-height: 18px;
 
                     &:nth-of-type(1) {
