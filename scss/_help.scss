@@ -3,7 +3,7 @@
     display: none;
     width: 100%;
     height: auto;
-    background: $mainBG_2;
+    // background: $mainBG_2;
 
     &.display {
         display: block;
@@ -17,6 +17,7 @@
         align-items: center;
         justify-content: center;
         border-bottom: solid 1px $mainBorder_1;
+        background: $mainBG_1;
 
         .selectBox {
             width: 92.27vw;
@@ -24,14 +25,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: $mainBG_1;
-            box-shadow: 0 0 13px 2px $boxshadow_1;
+            background: $mainBG_3;
+            // box-shadow: 0 0 13px 2px $boxshadow_1;
             position: relative;
-            border-radius: 5px;
-            border: solid 1px $mainBorder_2;
+            border-radius: 3px;
+            border: solid 1px $mainBorder_1;
 
             p {
-                color: $title_1;
+                color: $title_2;
                 font-size: 14px;
                 font-weight: bold;
             }
@@ -56,8 +57,9 @@
                 opacity: 0;
                 padding-left: 15px;
                 color: $mainWord_1;
+                background: $mainBG_3;
                 font-weight: bold;
-                font-size: 14px;
+                font-size: 15px;
             }
         }
     }
@@ -81,8 +83,7 @@
                 align-items: center;
                 justify-content: center;
                 background: $mainBG_1;
-                border-radius: 5px;
-                box-shadow: 0 0 5px 0 $boxshadow_2;
+                // box-shadow: 0 0 5px 0 $boxshadow_2;
                 margin-bottom: 15px;
                 font-size: 14px;
                 font-weight: bold;
@@ -136,8 +137,7 @@
                 width: 92.27vw;
                 height: 52px;
                 background: $mainBG_1;
-                box-shadow: 0 0 5px 0 $boxshadow_2;
-                border-radius: 5px;
+                // box-shadow: 0 0 5px 0 $boxshadow_2;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -146,8 +146,8 @@
 
                 .icon {
                     display: block;
-                    width: 15px;
-                    height: 20px;
+                    width: 22px;
+                    height: 25px;
                     margin: 0 4vw;
                     flex-shrink: 0;
                 }

@@ -1078,6 +1078,7 @@
         border-radius: 5px;
         overflow: hidden;
         display: none;
+        border: 1px solid $mainBorder_2;
 
         &.display {
             display: block;
@@ -1102,17 +1103,26 @@
                     font-size: 14px;
                     font-weight: bold;
                     color: $mainWord_1;
-                    background: $mainBG_2;
+                    background:  $vipDetail_onceBG;
                     border-bottom: solid 1px $point_Border;
                     display: flex;
                     align-items: center;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 1px;
+                        height: 8vw;
+                        background: $mainBorder_2;
+                        left: 51%;
+                    }
 
                     &:last-child {
                         border: none;
                     }
 
                     &.title {
-                        background: $point_BG;
+                        background: $vipDetail_SecondBG;
                         font-size: 16px;
                     }
 

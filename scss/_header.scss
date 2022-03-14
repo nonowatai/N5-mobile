@@ -19,16 +19,16 @@ header {
         overflow: hidden;
         background: $header-bg;
 
-        // .invite {
-        //     position:absolute;
-        //     right: 8px;
-        //     top: 5px;
+        .invite {
+            position:absolute;
+            right: 8px;
+            top: 5px;
 
-        //     .inviteimg {
-        //         width: 85px;
-        //         height: 40px;
-        //     }
-        // }
+            .inviteimg {
+                width: 85px;
+                height: 40px;
+            }
+        }
 
         .title {
             width: 70%;

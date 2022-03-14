@@ -20,7 +20,7 @@
 
 //查詢紅利按鈕
 header .inviteimg {
-    background: url('../images/icon/invite.png');
+    background: url('../images/invite.gif');
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -209,7 +209,7 @@ header .editBtn {
 .memberWrap .lang_ic,
 .memberWrap .logout_ic {
     background: url('../images/icon/memberIC.png') no-repeat;
-    background-size: 700%;
+    background-size: 596%;
 }
 
 //member_info
@@ -246,7 +246,7 @@ header .editBtn {
     background-size: contain;
 }
 .helpInner .title .often {
-    background: url('../images/icon/svg/problem2.svg') no-repeat center;
+    background: url('../images/icon/svg/lamp.svg') no-repeat center;
     background-size: contain;
 }
 //helpInner .img
@@ -303,12 +303,12 @@ header .editBtn {
 }
 
 //vip cardBox arrow
-.vipWrap .cardBox i,
-.vipWrap .checkBtn .arrow_ic,
-.vipDetail .list i::before {
-    background: url('../images/icon/arrow_b.png') no-repeat;
-    background-size: 100%;
-}
+// .vipWrap .cardBox i,
+// .vipWrap .checkBtn .arrow_ic,
+// .vipDetail .list i::before {
+//     background: url('../images/icon/arrow_b.png') no-repeat;
+//     background-size: 100%;
+// }
 //vip .card
 .vipWrap .cardBox .card li.vip0 {
     background: url('../images/vip_card.png') no-repeat;

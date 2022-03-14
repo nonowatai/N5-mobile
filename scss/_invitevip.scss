@@ -9,7 +9,7 @@
         ul {
             width: 100%;
             height: auto;
-            background: $mainBG_1;
+            background: $mainBG_3;
             
             li {
                 width: 100%;
@@ -23,7 +23,7 @@
 
                 &.forQR {
                     height: auto;
-                    padding: 0 17px;
+                    padding: 10px 17px;
 
                     span {
 
@@ -36,7 +36,7 @@
                 span {
                     font-size: 14px;
                     font-weight: bold;
-                    color: $title_2;
+                    color: $title_3;
 
                     &.empty {
                         color: $remind;
@@ -49,6 +49,7 @@
                     input {
                         background: none;
                         border: none;
+                        color: $title_3;
                     }
 
                     .copy {
@@ -120,6 +121,9 @@
 
         p {
             color: $optionColor;
+            margin-bottom: 13px;
+           font-size: 3.6vw;
+           line-height: 18px;
         }
     }
 }

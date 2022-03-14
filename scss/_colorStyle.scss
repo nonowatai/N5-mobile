@@ -12,13 +12,13 @@ $mainBorder_2: #b18e56;
 
 //金額色
 $money: #000000;
-$money_Sp: #19a24b;
+$money_Sp: #24b972;
 
 //可選字色
-$click: #af8c50;
+$click: #f3d3a4;
 
 //小提示字色
-$remind: #e11515;
+$remind: #ff1d1d;
 $remind_Sp: #1fb26c;
 
 //大選項字色
@@ -33,8 +33,10 @@ $title_Header: #f3d3a4;
 
 //選擇列字色+選擇列active
 $choose_Word: #f2bd7c;
-$choose_ActiveWord: #0fc854;
-$choose_Border: #0fc854;
+$choose_ActiveWord: #f3d3a4;
+$choose_Border: #f3d3a4;
+$choose_Active:linear-gradient(0deg,#037440 0,#074528);
+$choose_bg:#1b1b1b;
 
 //陰影色
 $boxshadow_1: #dedede;
@@ -69,7 +71,7 @@ $memberArea: linear-gradient(0deg,#f0c26b 0,#c09f60 40%,#fae0af);
 @mixin smallTip {
     background: #cca172;
     padding: 6px 18px;
-    color: #ffffff;
+    color: #242424;
     border-radius: 3px;
     font-size: 3vw;
     position: relative;
@@ -92,7 +94,7 @@ $memberArea: linear-gradient(0deg,#f0c26b 0,#c09f60 40%,#fae0af);
     }
 
     em {
-        color: #ffff00;
+        color: #243c29;
     }
 }
 
@@ -135,6 +137,9 @@ $operate_Money: #000000;
         color: #f3d3a4;
     }
 }
+
+//applyList優惠申請
+$saleTitle:#26643d;
 
 //主頁面按鈕
 $gameListBtn_Border: #dcab70;
@@ -223,31 +228,33 @@ $jumpWindow_border:#f3d3a4;
 }
 
 //vip
-$vip_LevelBar: #e0e0e0;
-$vip_LevelCur: #d3b47b;
-$vip_LevelBG: #cccccc;
-$vip_LevelLinear: linear-gradient(to bottom,#f7eeba 0%,#bf9d5f 50%,#eed6af 100%);
+$vip_LevelBar: #212121;
+$vip_LevelCur: linear-gradient(90deg,#f8deb8 0,#d59344 41%,#efbd82 95%);
+$vip_LevelBG: #535050;
+$vip_LevelLinear: linear-gradient(0deg,#0cb865 0,#07713e 50%,#0cb865);
 $vip_Word: #ffffff;
 @mixin vipCardText {
     color: #ffffff;
     text-shadow: 1px 2px 3px #000000;
 }
-$vipDetail_SecondBG: #f7ede1;
+$vipDetail_SecondBG: #2f2f2f;
+$vipDetail_onceBG: #282828;
+$vipDetail_titleBG: #02582f;
 
 //eventApply
-$currentBG: #ece2ca;
+$currentBG: #252525;
 
 //pointWindow
-$point_BG: #e8cb8e;
+$point_BG: #282828;
 $point_Border: #957222;
 
 //card
 $cardLinear: linear-gradient(120deg,#f1d7b7 0%,#cca172 50%,#f1c999 100%);
-$cardLinear_Empty: linear-gradient(120deg,#e8ebf2 0%,#cbcdd3 30%);
-$cardWord: #ffffff;
+$cardLinear_Empty: linear-gradient(347deg,#434343,#545454);
+$cardWord: #dcab70;
 @mixin cardStatus {
-    background: #ffffff;
-    color: #ad8047;
+    background: #1f2f23;
+    color: #dcab70;
     font-size: 12px;
     opacity: 0;
     padding: 4px 0;
@@ -260,25 +267,24 @@ $card_upload:#3d4cce;
 $card_line:#3502ff;
 
 //mail
-$mailCnt_TopBG: #e0c38d;
+$mailCnt_TopBG: #037440;
 @mixin mailWrap {
-    background: #ffffff;
-    border: solid 1px #957222;
+    background: #313131;
+    border: 1px solid #f3d3a4;
     border-radius: 5px;
     position: relative;
-    box-shadow: 0 2px 5px 0 #c3c3c3;
 
     &.read {
-        background: #f2f3f3;
+        background: #1b1b1b;
 
         .title {
-            color: #b3b3b3;
+            color: #f2bd7c;
         }
 
         .textBox {
 
             p,.date {
-                color: #b3b3b3;
+                color: #f2bd7c;
             }
         }
     }
@@ -291,8 +297,8 @@ $mailCnt_TopBG: #e0c38d;
         position: absolute;
         width: 19px;
         height: 19px;
-        border: solid 1px #957222;
-        background: #ffffff;
+        border: solid 1px #ffffff;
+        background: #232323;
         border-radius: 50%;
         top: 50%;
         left: 50%;
@@ -307,7 +313,7 @@ $mailCnt_TopBG: #e0c38d;
             position: absolute;
             width: 12px;
             height: 12px;
-            background: #957222;
+            background: #0fc854;
             border-radius: 50%;
             top: 50%;
             left: 50%;
@@ -437,21 +443,22 @@ $slotGame_Word: #4d4d4d;
 
 //deposit
 @mixin depositBtn {
-    background: linear-gradient(135deg,transparent,transparent 85%,#dcab70 0,#dcab70);
-    border: 2px solid #dcab70;
+    // background: linear-gradient(135deg,transparent,transparent 85%,#dcab70 0,#dcab70);
+    border: 1px solid #2e7b4a;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-radius: 3px;
-    color: #f2bd7c;
+    color: #2e7b4a;
     font-weight: bold;
     position: relative;
     overflow: hidden;
     font-size: 12px;
 
     &.active {
-        border-color: #c7a76d;
+        border:2px solid #c7a76d;
+        color: #c7a76d;
 
         &::before {
             content: "";
@@ -490,21 +497,21 @@ $slotGame_Word: #4d4d4d;
 }
 //無背景帶顏色按鈕
 @mixin noBgBtn_Color1 {
-    background: #ffffff;
-    border: solid 1px #4cb816;
+    background: #2e2e2e;
+    border: solid 1px #0db668;
     font-size: 14px;
     font-weight: bold;
-    color: #4cb816;
+    color: #0db668;
     border-radius: 3px;
     padding: 0 5px;
     letter-spacing: 1px;
 }
 @mixin noBgBtn_Color2 {
-    background: #ffffff;
-    border: solid 1px #e11515;
+    background: #2e2e2e;
+    border: solid 1px #fa2c2c;
     font-size: 14px;
     font-weight: bold;
-    color: #e11515;
+    color: #fa2c2c;
     border-radius: 3px;
     padding: 0 5px;
     letter-spacing: 1px;
@@ -550,6 +557,13 @@ $slotGame_Word: #4d4d4d;
     }
 }
 
+//upload-btn上傳按鈕
+@mixin upload {
+    background: linear-gradient(to bottom, #037440 0%, #074528 100%);
+    color: #f2bd7c;
+    border:1px solid #f2bd7c;
+}
+
 //常用橘色漸層
 @mixin mainBtn {
     background: linear-gradient(0deg,#f3d3a4 16%,#c29054 47%,#f3d3a4 84%);
@@ -584,10 +598,10 @@ $slotGame_Word: #4d4d4d;
 }
 //灰漸層底+橘色漸層active
 @mixin changeBtn {
-    background: linear-gradient(to top,#d7d7d7 0%,#ffffff 58%,#ffffff 100%);
+    background: linear-gradient(0deg,#efbd82 0,#f8deb8);
     font-size: 4vw;
-    color: #848484;
-    border: solid 1px #957222;
+    color: #252525;
+    // border: solid 1px #957222;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -595,8 +609,9 @@ $slotGame_Word: #4d4d4d;
     flex-shrink: 0;
 
     &:active,&.active {
-        background: linear-gradient(to top,#dfc88b 0%,#b79451 100%);
-        color: #ffffff;
+        background: linear-gradient(0deg,#2f845c 0,#1d5832);
+        color: #f3d3a4;
+        border: 1px solid #dcab70;
     }
 }
 
@@ -616,9 +631,9 @@ $slotGame_Word: #4d4d4d;
 
 //大灰切換按鈕
 @mixin bigGrayBtn {
-    background: linear-gradient(to bottom, #ffffff 0%, #dadada 100%);
-    border: solid 1px #cccccc;
-    color: #4d4d4d;
+    background: #505050;
+    // border: solid 1px #cccccc;
+    color: #b8b8b8;
     font-weight: bold;
     font-size: 3.7vw;
     display: flex;
@@ -626,18 +641,17 @@ $slotGame_Word: #4d4d4d;
     justify-content: center;
 
     &:active,&.active {
-        border-color: #957222;
-        color: #ffffff;
-        background: linear-gradient(to top,#dfc88b 0%,#b79451 100%);
+        color: #252525;
+        background:linear-gradient(0deg,#dcab70 0,#f3d3a4);
     }
 }
 
 //假select樣式按鈕
 @mixin fakeSelect {
-    background: #ffffff;
+    background: #252525;
     border-radius: 3px;
-    border: solid 1px #957222;
-    color: #000000;
+    border: 1px solid #8f6f49;
+    color: #f2bd7c;
     font-size: 16px;
     padding: 0 15px;
     position: relative;
@@ -652,15 +666,15 @@ $slotGame_Word: #4d4d4d;
         height: 0;
         border-style: solid;
         border-width: 6px 4px 0 4px;
-        border-color: #957222 transparent;
+        border-color: #56bd4f transparent;
     }
 }
 
 button:disabled {
-    background: #cccccc !important;
+    background: #616161 !important;
     border: none !important;
     box-shadow: none !important;
-    color: #ffffff !important;
+    color: #b7b7b7 !important;
     pointer-events: none;
 }
 
@@ -673,7 +687,7 @@ button:disabled {
     background: none;
     border: solid 1px #957222;
     font-size: 15px;
-    color: #000000;
+    color: #f2bd7c;
     font-weight: bold;
     border-radius: 3px;
     padding-left: 15px;

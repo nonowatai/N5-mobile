@@ -223,8 +223,8 @@
         i {
             display: block;
             margin-right: 2vw;
-            width: 8vw;
-            height: 8vw;
+            width: 7vw;
+            height: 7vw;
 
             &.point_ic {
                 width: 6vw;
@@ -234,23 +234,23 @@
             }
 
             &.help_ic {
-                background-position-x: -8vw;
+                background-position-x: -7vw;
             }
 
             &.about_ic {
-                background-position-x: -16vw;
+                background-position-x: -14vw;
             }
 
             &.app_ic {
-                background-position-x: -32vw;
+                background-position-x: -20.5vw;
             }
 
             &.lang_ic {
-                background-position-x: -40vw;
+                background-position-x: -27.7vw;
             }
 
             &.logout_ic {
-                background-position-x: -48vw;
+                background-position-x: -35vw;
             }
         }
 
@@ -258,7 +258,7 @@
             display: block;
             width: 2vw;
             height: 3.4vw;
-            transform: scaleX(-1);
+            // transform: scaleX(-1);
         }
     }
 }
@@ -290,6 +290,7 @@
             &:active,&.active {
                 color: $choose_ActiveWord;
                 border-color: $choose_Border;
+                background: $choose_Active;
             }
         }
     }
