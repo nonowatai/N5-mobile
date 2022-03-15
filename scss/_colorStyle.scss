@@ -12,7 +12,7 @@ $mainBorder_2: #b18e56;
 
 //金額色
 $money: #000000;
-$money_Sp: #24b972;
+$money_Sp: #1fb26c;
 
 //可選字色
 $click: #f3d3a4;
@@ -725,7 +725,7 @@ button:disabled {
 
 
 @mixin mainSelect {
-    background-color: #252525;
+    background-color:#1c1c1c;
     border-radius: 3px;
     appearance: none;
     font-size: 15px;

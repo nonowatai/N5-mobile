@@ -21,7 +21,7 @@
         <div class="content">
             <!--logo-->
             <img src="./images/icon/logo.png" class="logo">
-            <div class="invite">
+            <div class="invite" onclick="unlogin()">
                 <div class="inviteimg"></div>
             </div>
         </div>
@@ -61,7 +61,7 @@
                 <ul>
                     <li>
                         <span class="name">user898</span>
-                        <div class="lv">測試層級</div>
+                        <div class="lv">普通會員</div>
                     </li>
                     <li class="amount">$9883</li>
                 </ul>
@@ -78,8 +78,9 @@
                     <button onclick="unlogin()">
                         <span>提</span>
                     </button>
-                    <!-- <button class="vipBtn" onclick="unlogin()">VIP</button>
-                    <button class="vipBtn" onclick="unlogin()">VIP</button> -->
+                    <button class="vipBtn display" onclick="unlogin()">
+                        <div class="vipWord">VIP</div>
+                    </button>
                 </div>
             </div>
         </div>

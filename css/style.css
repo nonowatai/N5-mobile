@@ -65,6 +65,16 @@ footer i {
   background-size: 100%;
 }
 
+.jumpWindow.loginWindow form label:before {
+  background: url("../images/icon/inputIC.png") no-repeat;
+  background-size: 400%;
+}
+
+.jumpWindow.registerWindow form label:before {
+  background: url("../images/icon/inputIC.png") no-repeat;
+  background-size: 400%;
+}
+
 .jumpWindow .eye {
   background: url("../images/icon/svg/eye.svg") no-repeat;
   background-size: 100%;
@@ -852,6 +862,9 @@ html body .memberArea .member_icon {
   width: 30px;
   height: 30px;
 }
+html body .memberArea .member_icon.display {
+  display: none;
+}
 html body .memberArea::before {
   content: "";
   position: absolute;
@@ -1062,8 +1075,20 @@ html body .memberArea .operate .btnBox button span {
           transform: translate(-50%, -50%) rotate(-45deg);
   color: #f3d3a4;
 }
+html body .memberArea .operate .btnBox .vipBtn {
+  display: none;
+}
+html body .memberArea .operate .btnBox .vipBtn.display {
+  display: block;
+}
 html body .memberArea .operate .btnBox .vipWord {
+  position: absolute;
   font-size: 4vw;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  color: #f3d3a4;
 }
 html body .homeCenter {
   width: 100%;
@@ -1475,8 +1500,19 @@ html body .filter .loginWindow form label {
   height: auto;
   position: relative;
 }
+html body .filter .loginWindow form label::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  width: 20px;
+  height: 24px;
+}
 html body .filter .loginWindow form label:nth-of-type(1) {
   margin: 9vw 0 8vw;
+}
+html body .filter .loginWindow form label:nth-of-type(2):nth-of-type(2)::before {
+  background-position-x: -20px;
 }
 html body .filter .loginWindow form label input {
   width: 77.6vw;
@@ -1491,6 +1527,7 @@ html body .filter .loginWindow form label input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #1c1c1c;
+  padding-left: 35px;
 }
 html body .filter .loginWindow form label input::-webkit-input-placeholder {
   color: #f2bd7c;
@@ -1526,7 +1563,7 @@ html body .filter .loginWindow form .forget {
 html body .filter .loginWindow form .forget p {
   font-size: 12px;
   font-weight: bold;
-  color: #f3d3a4;
+  color: #1fb26c;
 }
 html body .filter .loginWindow form .forget p span {
   margin: 0 2px;
@@ -1564,7 +1601,8 @@ html body .filter .loginWindow .registerBtn {
 }
 html body .filter .loginWindow .registerBtn p {
   margin-left: 10px;
-  color: #f3d3a4;
+  color: #1fb26c;
+  text-decoration: underline;
 }
 html body .filter .forgetWindow {
   width: 92.27vw;
@@ -1696,6 +1734,32 @@ html body .filter .registerWindow form label {
   position: relative;
   margin-bottom: 5.06vw;
 }
+html body .filter .registerWindow form label::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  width: 20px;
+  height: 24px;
+}
+html body .filter .registerWindow form label:nth-of-type(2):nth-of-type(2)::before {
+  background-position-x: -20px;
+}
+html body .filter .registerWindow form label:nth-of-type(3):nth-of-type(3)::before {
+  background-position-x: -20px;
+}
+html body .filter .registerWindow form label:nth-of-type(4):nth-of-type(4)::before {
+  background-position-x: -60px;
+}
+html body .filter .registerWindow form label:nth-of-type(5):nth-of-type(5)::before {
+  background-position-x: -40px;
+}
+html body .filter .registerWindow form label:nth-of-type(6):nth-of-type(6)::before {
+  background-position-x: -40px;
+}
+html body .filter .registerWindow form label:nth-of-type(7):nth-of-type(7)::before {
+  display: none;
+}
 html body .filter .registerWindow form label input {
   width: 77.33vw;
   height: 9.6vw;
@@ -1709,6 +1773,7 @@ html body .filter .registerWindow form label input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #1c1c1c;
+  padding-left: 35px;
 }
 html body .filter .registerWindow form label input::-webkit-input-placeholder {
   color: #f2bd7c;
@@ -1746,7 +1811,7 @@ html body .filter .registerWindow form label.isCheck input[type=checkbox] {
   margin-right: 10px;
 }
 html body .filter .registerWindow form label.isCheck p {
-  color: #f3d3a4;
+  color: #1fb26c;
 }
 html body .filter .registerWindow form label .eye {
   position: absolute;
@@ -1759,24 +1824,22 @@ html body .filter .registerWindow form label .eye {
 }
 html body .filter .registerWindow form label .cellphoneCheck {
   width: 23.2vw;
-  height: 8vw;
+  height: 7.4vw;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 10px;
-  background: #242424;
-  border: 1px solid #1aa34c;
-  font-size: 13px;
-  font-weight: bold;
-  color: #13b165;
+  border: 1px solid #f3d3a4;
+  color: #f3d3a4;
+  background: #313131;
   border-radius: 3px;
 }
 html body .filter .registerWindow form .remind {
   width: 77.33vw;
   margin: 5px 0;
   font-size: 12px;
-  color: #ff1d1d;
+  color: #1fb26c;
   font-weight: bold;
 }
 html body .filter .registerWindow form .checkBtn {
@@ -1822,7 +1885,7 @@ html body .filter .ruleWindow .content .ruleBody h2 {
   padding: 10px 5px;
   font-weight: bold;
   line-height: 1.8;
-  color: #c0933e;
+  color: #f3d3a4;
 }
 html body .filter .ruleWindow .content .ruleBody p {
   font-size: 3.4vw;
@@ -2433,7 +2496,7 @@ html body .filter .checkPoint .total .smallTitle {
 html body .filter .checkPoint .total .point {
   font-weight: bold;
   font-size: 26px;
-  color: #24b972;
+  color: #1fb26c;
   margin-top: 8px;
 }
 html body .filter .checkPoint ul {
@@ -3270,7 +3333,7 @@ html body .walletWrap .walletBox .gradient .content .details .items p:nth-of-typ
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 10px;
-  color: #24b972;
+  color: #1fb26c;
 }
 html body .walletWrap .walletBox ul {
   width: 100%;
@@ -3461,7 +3524,7 @@ html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner em {
 html body .walletWrap .walletList .forPlatform ul li p {
   margin-top: 10px;
   font-size: 17px;
-  color: #24b972;
+  color: #1fb26c;
   font-weight: bold;
 }
 html body .walletWrap .walletList .forPlatform .openBtn {
@@ -3557,8 +3620,6 @@ html body .walletWrap .options .arrow_ic {
   display: block;
   width: 2vw;
   height: 3.4vw;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
 }
 html body .memberWrap {
   width: 100%;
@@ -4947,7 +5008,7 @@ html body .applyRecord .searchContain form ul li p {
 html body .applyRecord .searchContain form ul li select {
   width: 100%;
   height: 42px;
-  background-color: #252525;
+  background-color: #1c1c1c;
   border-radius: 3px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -5447,7 +5508,7 @@ html body .vipWrap .enjoyBox ul li:nth-of-type(2n) {
 }
 html body .vipWrap .enjoyBox ul li p {
   font-size: 22px;
-  color: #24b972;
+  color: #1fb26c;
   margin-top: 8px;
 }
 html body .vipWrap .enjoyBox ul s {
@@ -6599,7 +6660,7 @@ html body .bettingWrap .searchContent .top .full .selectBox {
 html body .bettingWrap .searchContent .top .full .selectBox select {
   width: 100%;
   height: 42px;
-  background-color: #252525;
+  background-color: #1c1c1c;
   border-radius: 3px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -7093,7 +7154,7 @@ html body .depositWrap .depContent .title span {
 html body .depositWrap .depContent select {
   width: 100%;
   height: 42px;
-  background-color: #252525;
+  background-color: #1c1c1c;
   border-radius: 3px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -7302,28 +7363,30 @@ html body .transWrap {
   width: 100%;
   height: calc(100vh - 95px);
   overflow-y: auto;
-  background: #f8f8f8;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 10px 0;
 }
-html body .transWrap .wallet {
+html body .transWrap .wallet-bg {
+  width: 100%;
+  height: 25vw;
+  background: #222;
+  padding-top: 10px;
+}
+html body .transWrap .wallet-bg .wallet {
   width: 92vw;
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 12px 15px 10px;
   border-radius: 5px;
-  background: #313131;
-  -webkit-box-shadow: 0 0 5px 0 #c8c8c880;
-          box-shadow: 0 0 5px 0 #c8c8c880;
-  margin: 0 auto 10px;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: solid 1px #b18e56;
+  background: #222;
+  border: solid 1px #f3d3a4;
 }
-html body .transWrap .wallet .helf {
+html body .transWrap .wallet-bg .wallet .helf {
   width: 100%;
   height: 65px;
   display: -webkit-box;
@@ -7337,7 +7400,7 @@ html body .transWrap .wallet .helf {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-html body .transWrap .wallet .helf .title {
+html body .transWrap .wallet-bg .wallet .helf .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7347,14 +7410,14 @@ html body .transWrap .wallet .helf .title {
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: bold;
-  color: #c0933e;
+  color: #f3d3a4;
 }
-html body .transWrap .wallet .helf .title i {
+html body .transWrap .wallet-bg .wallet .helf .title i {
   width: 4.27vw;
   height: 4.27vw;
   margin-left: 6px;
 }
-html body .transWrap .wallet .helf .title button {
+html body .transWrap .wallet-bg .wallet .helf .title button {
   width: 18.93vw;
   height: 6.13vw;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(16%, #f3d3a4), color-stop(47%, #c29054), color-stop(84%, #f3d3a4));
@@ -7367,15 +7430,15 @@ html body .transWrap .wallet .helf .title button {
   font-size: 12px;
   margin-left: 20px;
 }
-html body .transWrap .wallet .helf .title button:active, html body .transWrap .wallet .helf .title button.active {
+html body .transWrap .wallet-bg .wallet .helf .title button:active, html body .transWrap .wallet-bg .wallet .helf .title button.active {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2f845c), to(#1d5832));
   background: linear-gradient(0deg, #2f845c 0, #1d5832);
   color: #f3d3a4;
   border: 1px solid #dcab70;
 }
-html body .transWrap .wallet .helf .amount {
+html body .transWrap .wallet-bg .wallet .helf .amount {
   font-size: 29px;
-  color: #000000;
+  color: #f2bd7c;
   font-weight: bold;
 }
 html body .transWrap .transBox {
@@ -7385,6 +7448,7 @@ html body .transWrap .transBox {
   padding: 10px 14px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-bottom: 1px solid #f3d3a4;
 }
 html body .transWrap .transBox .selectBox {
   width: auto;
@@ -7395,7 +7459,7 @@ html body .transWrap .transBox .selectBox {
 html body .transWrap .transBox .selectBox select {
   width: 100%;
   height: 42px;
-  background-color: #252525;
+  background-color: #1c1c1c;
   border-radius: 3px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -7474,6 +7538,8 @@ html body .transWrap .forPlatform {
   display: none;
   background: #313131;
   margin-top: 10px;
+  border-top: 1px solid #f3d3a4;
+  border-bottom: 1px solid #f3d3a4;
 }
 html body .transWrap .forPlatform.display {
   display: block;
@@ -7522,9 +7588,10 @@ html body .transWrap .forPlatform ul li {
           box-sizing: border-box;
   padding: 10px 0 0 11px;
   margin: 0 0.26vw 0.26vw 0;
-  border: solid 1px #b18e56;
-  border-radius: 1.5vw;
+  border: solid 1px #f3d3a4;
+  border-radius: 3px;
   margin: 0 1.9vw 12px 0;
+  background: #222;
 }
 html body .transWrap .forPlatform ul li:nth-of-type(3n) {
   margin-right: 0;
@@ -7532,7 +7599,7 @@ html body .transWrap .forPlatform ul li:nth-of-type(3n) {
 html body .transWrap .forPlatform ul li div {
   font-size: 12px;
   letter-spacing: 1px;
-  color: #f3d3a4;
+  color: #f2bd7c;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7598,7 +7665,7 @@ html body .transWrap .forPlatform ul li div .smallInfo .inner em {
 html body .transWrap .forPlatform ul li p {
   margin-top: 10px;
   font-size: 17px;
-  color: #000000;
+  color: #1fb26c;
   font-weight: bold;
 }
 html body .transWrap .forPlatform .openBtn {
@@ -7640,7 +7707,6 @@ html body .withWrap {
   width: 100%;
   min-height: calc(100vh - 92px);
   height: auto;
-  background: #f8f8f8;
   padding-bottom: 10px;
 }
 html body .withWrap .walletBox {
@@ -7965,7 +8031,7 @@ html body .withWrap .withContent .remind .high {
 html body .withWrap .withContent select {
   width: 100%;
   height: 42px;
-  background-color: #252525;
+  background-color: #1c1c1c;
   border-radius: 3px;
   -webkit-appearance: none;
      -moz-appearance: none;

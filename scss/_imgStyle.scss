@@ -65,6 +65,15 @@ footer i {
     background: url('../images/icon/loginIC.png') no-repeat;
     background-size: 100%;
 }
+//登入註冊窗的icon
+.jumpWindow.loginWindow form label:before {
+    background: url('../images/icon/inputIC.png') no-repeat;
+    background-size: 400%;
+}
+.jumpWindow.registerWindow form label:before {
+    background: url('../images/icon/inputIC.png') no-repeat;
+    background-size: 400%;
+}
 //jumpWindow .eye
 .jumpWindow .eye {
     background: url('../images/icon/svg/eye.svg') no-repeat;

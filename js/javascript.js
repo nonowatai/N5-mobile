@@ -169,6 +169,9 @@ $(function(){
         $('.jumpWindow,.loginBtn').removeClass('display');
         $('.jumpWindow,.registerBtn').removeClass('display');
         $('.filter,.news,.alLogin').addClass('display');
+        $('.memberArea .operate .vipBtn').addClass('display');
+        $('.memberArea .operate .vipBtn').addClass('display');
+        $('.memberArea .member_icon').addClass('display');
         $('.operate').addClass("login");
         
         $('.gameBox.slotBox li').attr('onclick',"callSlot()");
