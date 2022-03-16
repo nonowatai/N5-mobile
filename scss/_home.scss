@@ -85,8 +85,7 @@
         }
     }
 
-    &::before {
-        content: "";
+    .before {
         position: absolute;
         width: 1px;
         height: 6.9%;

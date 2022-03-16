@@ -154,7 +154,7 @@
                 width: 100%;
                 height: 38px;
                 border-bottom: solid 1px $mainBorder_1;
-                color: $title_3;
+                color: $title_2;
                 font-size: 14px;
                 font-weight: bold;
                 display: flex;
@@ -165,7 +165,7 @@
                 
                 .date {
                     font-size: 13px;
-                    color: $title_Time;
+                    color: #f2bd7c;
                 }
 
                 button {
@@ -193,6 +193,7 @@
 
                     p {
                         font-size: 13px;
+                        color: $title_Time;
 
                         &.num {
                             color: $mainWord_1;
@@ -205,6 +206,10 @@
                                 color: $remind_Sp;
                             }
                         }
+                    }
+
+                    span {
+                        color: $remind;
                     }
                 }
             }

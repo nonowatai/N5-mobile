@@ -430,9 +430,9 @@
                     top: 50%;
                     transform: translateY(-50%);
                     right: 10px;
-                    border: 1px solid $mainBorder_1;
-                    color: $title_2;
-                    background: $mainBG_1;
+                    border: 1px solid $remind_Sp;
+                    color: $remind_Sp;
+                    background: none;
                     border-radius: 3px;
                 }
             }
@@ -561,8 +561,8 @@
                 p {
                     width: 22.67vw;
                     height: 10vw;
-                    @include changeBtn;
-                    border-radius: 8px;
+                    @include newsBtn;
+                    border-radius: 3px;
                 }
             }
         }

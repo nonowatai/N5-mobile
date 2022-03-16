@@ -220,7 +220,7 @@
                 width: 87.27vw;
                 height: 47.46vw;
                 overflow-x: auto;
-                border-radius: 10px;
+                border-radius: 22px;
                 
                 ul {
                     display: flex;
@@ -618,6 +618,21 @@
                     transform: translateX(0);
                 }
             }
+        }
+    }
+    .notice {
+        width: 100%;
+        height: auto;
+        padding: 10px 18px;
+        box-sizing: border-box;
+        color: $title_3;
+        font-size: 3.6vw;
+        line-height: 6vw;
+
+        h2 {
+            color: $remind_Sp;
+            font-weight: bold;
+            font-size: 4vw;
         }
     }
 }

@@ -865,8 +865,7 @@ html body .memberArea .member_icon {
 html body .memberArea .member_icon.display {
   display: none;
 }
-html body .memberArea::before {
-  content: "";
+html body .memberArea .before {
   position: absolute;
   width: 1px;
   height: 6.9%;
@@ -1830,9 +1829,9 @@ html body .filter .registerWindow form label .cellphoneCheck {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 10px;
-  border: 1px solid #f3d3a4;
-  color: #f3d3a4;
-  background: #313131;
+  border: 1px solid #1fb26c;
+  color: #1fb26c;
+  background: none;
   border-radius: 3px;
 }
 html body .filter .registerWindow form .remind {
@@ -1973,10 +1972,10 @@ html body .filter .news .typeList li {
 html body .filter .news .typeList li p {
   width: 22.67vw;
   height: 10vw;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #efbd82), to(#f8deb8));
-  background: linear-gradient(0deg, #efbd82 0, #f8deb8);
+  background: #313131;
   font-size: 4vw;
-  color: #252525;
+  color: #f2bd7c;
+  border: 1px solid #b18e56;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1989,13 +1988,12 @@ html body .filter .news .typeList li p {
   font-weight: bold;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  border-radius: 8px;
+  border-radius: 3px;
 }
 html body .filter .news .typeList li p:active, html body .filter .news .typeList li p.active {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2f845c), to(#1d5832));
-  background: linear-gradient(0deg, #2f845c 0, #1d5832);
-  color: #f3d3a4;
-  border: 1px solid #dcab70;
+  background: #24693c;
+  color: #ffffff;
+  border: 1px solid #ffffff;
 }
 html body .filter .news .content {
   width: 100%;
@@ -2561,7 +2559,7 @@ html body .filter .checkPoint ul li .point .info {
           justify-content: center;
   font-size: 12px;
   letter-spacing: 1px;
-  background: #cca172;
+  background: #fbbe7c;
   padding: 6px 18px;
   color: #242424;
   border-radius: 3px;
@@ -2884,8 +2882,8 @@ html body .slotWrap .slotHeader .searchBox {
   width: 100%;
   height: 28px;
   margin-bottom: 5px;
-  background: #f2f3f3;
-  border: solid 1px #cccccc;
+  background: #313131;
+  border: 1px solid #a7854d;
   padding: 4px 10px 4px 15px;
   border-radius: 30px;
   display: -webkit-box;
@@ -2907,7 +2905,7 @@ html body .slotWrap .slotHeader .searchBox input {
   height: auto;
   background: none;
   border: none;
-  color: #000000;
+  color: #f2bd7c;
   padding-left: 10px;
   font-size: 13px;
   font-weight: bold;
@@ -2915,19 +2913,19 @@ html body .slotWrap .slotHeader .searchBox input {
           box-sizing: border-box;
 }
 html body .slotWrap .slotHeader .searchBox input::-webkit-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .slotWrap .slotHeader .searchBox input::-moz-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .slotWrap .slotHeader .searchBox input:-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .slotWrap .slotHeader .searchBox input::-ms-input-placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .slotWrap .slotHeader .searchBox input::placeholder {
-  color: #848484;
+  color: #f2bd7c;
 }
 html body .slotWrap .gameList {
   width: calc(100% - 30px);
@@ -2942,11 +2940,10 @@ html body .slotWrap .gameList {
 }
 html body .slotWrap .gameList .gameBox {
   width: calc((96vw - 30px)/2);
-  height: 175px;
+  height: 137px;
   margin: 0 1vw 8px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(67%, #fcfcfc), to(#d8d8d8));
-  background: linear-gradient(to bottom, #fcfcfc 67%, #d8d8d8 100%);
-  border: solid 1px #b3b3b3;
+  background: #344e1c;
+  border: 1px solid #b3b3b3;
   border-radius: 5px;
   overflow: hidden;
   position: relative;
@@ -2962,7 +2959,7 @@ html body .slotWrap .gameList .gameBox p {
   padding: 0 15px;
   font-size: 14px;
   font-weight: bold;
-  color: #4d4d4d;
+  color: #f3d3a4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2976,47 +2973,6 @@ html body .slotWrap .gameList .gameBox p {
 html body .slotWrap .gameList .gameBox p .love {
   width: 17px;
   height: 17px;
-}
-html body .slotWrap .gameList .gameBox .btnBox {
-  width: 100%;
-  height: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-html body .slotWrap .gameList .gameBox .btnBox button {
-  width: 20vw;
-  height: 32px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#8c1212), to(#ff4a4a));
-  background: linear-gradient(to top, #8c1212 0%, #ff4a4a 100%);
-  border: solid 1px #dc0000;
-  border-radius: 3px;
-  font-size: 3vw;
-  color: #ffffff;
-  font-weight: bold;
-}
-html body .slotWrap .gameList .gameBox .btnBox button:active, html body .slotWrap .gameList .gameBox .btnBox button.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#8c1212), to(#ff4a4a));
-  background: linear-gradient(to bottom, #8c1212 0%, #ff4a4a 100%);
-}
-html body .slotWrap .gameList .gameBox .btnBox button.try {
-  background: -webkit-gradient(linear, left bottom, left top, from(#384c79), to(#2b87e6));
-  background: linear-gradient(to top, #384c79 0%, #2b87e6 100%);
-  border: solid 1px #0f4eb7;
-  border-radius: 3px;
-  font-size: 3vw;
-  color: #ffffff;
-  font-weight: bold;
-}
-html body .slotWrap .gameList .gameBox .btnBox button.try:active, html body .slotWrap .gameList .gameBox .btnBox button.try.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#384c79), to(#2b87e6));
-  background: linear-gradient(to bottom, #384c79 0%, #2b87e6 100%);
 }
 html body .eventType {
   width: 100%;
@@ -3241,6 +3197,7 @@ html body .walletWrap .walletBox {
   background: #313131;
   padding-top: 25px;
   border-bottom: 1px solid #f3d3a4;
+  border-top: 1px solid #f3d3a4;
 }
 html body .walletWrap .walletBox .gradient {
   width: 100%;
@@ -3488,7 +3445,7 @@ html body .walletWrap .walletList .forPlatform ul li div .smallInfo .inner {
   display: none;
   width: auto;
   height: auto;
-  background: #cca172;
+  background: #fbbe7c;
   padding: 6px 18px;
   color: #242424;
   border-radius: 3px;
@@ -4283,8 +4240,6 @@ html body .memberInfo .info_1 ul li span .changePhoneBtn i, html body .memberInf
   display: block;
   width: 2vw;
   height: 3.4vw;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
   margin-left: 8px;
 }
 html body .memberInfo .info_1 ul li .qrCode, html body .memberInfo .info_2 ul li .qrCode {
@@ -4455,8 +4410,8 @@ html body .helpWrap .helpHeader .selectBox .arrow_ic {
   height: 3.4vw;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%) rotate(270deg);
-          transform: translateY(-50%) rotate(270deg);
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
   right: 4vw;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
@@ -4565,8 +4520,6 @@ html body .helpInner ul li .title .arrow_ic {
   margin: 0 4vw;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
@@ -4846,7 +4799,7 @@ html body .applyList .listBox .list .tips {
   display: none;
   width: 56vw;
   margin: 6px auto 0;
-  background: #cca172;
+  background: #fbbe7c;
   padding: 6px 18px;
   color: #242424;
   border-radius: 3px;
@@ -4949,6 +4902,7 @@ html body .applyList .listBox .list .btnBox button.applyBtn {
   border-radius: 3px;
   letter-spacing: 1px;
   font-size: 16px;
+  width: 48%;
 }
 html body .applyList .listBox .list .btnBox button.applyBtn:active, html body .applyList .listBox .list .btnBox button.applyBtn.active {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2f845c), to(#1d5832));
@@ -4964,6 +4918,7 @@ html body .applyList .listBox .list .btnBox button.checkBtn {
   color: #13b165;
   border-radius: 3px;
   font-size: 16px;
+  width: 48%;
 }
 html body .applyRecord {
   width: 100%;
@@ -5400,7 +5355,7 @@ html body .vipWrap .topBox .cardBox .card {
   width: 87.27vw;
   height: 47.46vw;
   overflow-x: auto;
-  border-radius: 10px;
+  border-radius: 22px;
 }
 html body .vipWrap .topBox .cardBox .card ul {
   display: -webkit-box;
@@ -5862,6 +5817,21 @@ html body .vipDetail .lvWrap .list .finger::after {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+}
+html body .vipDetail .notice {
+  width: 100%;
+  height: auto;
+  padding: 10px 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #f2bd7c;
+  font-size: 3.6vw;
+  line-height: 6vw;
+}
+html body .vipDetail .notice h2 {
+  color: #1fb26c;
+  font-weight: bold;
+  font-size: 4vw;
 }
 html body .topList {
   width: 100%;
@@ -6771,7 +6741,7 @@ html body .bettingWrap .list .recordBox .title {
   width: 100%;
   height: 38px;
   border-bottom: solid 1px #f3d3a4;
-  color: #f2bd7c;
+  color: #f3d3a4;
   font-size: 14px;
   font-weight: bold;
   display: -webkit-box;
@@ -6789,7 +6759,7 @@ html body .bettingWrap .list .recordBox .title {
 }
 html body .bettingWrap .list .recordBox .title .date {
   font-size: 13px;
-  color: #0fc854;
+  color: #f2bd7c;
 }
 html body .bettingWrap .list .recordBox .title button {
   width: 80px;
@@ -6826,6 +6796,7 @@ html body .bettingWrap .list .recordBox ul li {
 }
 html body .bettingWrap .list .recordBox ul li p {
   font-size: 13px;
+  color: #0fc854;
 }
 html body .bettingWrap .list .recordBox ul li p.num {
   color: #ffc266;
@@ -6835,6 +6806,9 @@ html body .bettingWrap .list .recordBox ul li p.num.win {
 }
 html body .bettingWrap .list .recordBox ul li p.num.lose {
   color: #1fb26c;
+}
+html body .bettingWrap .list .recordBox ul li span {
+  color: #ff1d1d;
 }
 html body .bettingWrap.deal {
   padding: 0;
@@ -7070,7 +7044,7 @@ html body .depositWrap .depList .listWrap ul li {
   width: 22.4vw;
   height: 19.2vw;
   margin-right: 5px;
-  border: 1px solid #2e7b4a;
+  border: 1px solid #1fb26c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7085,7 +7059,7 @@ html body .depositWrap .depList .listWrap ul li {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 3px;
-  color: #2e7b4a;
+  color: #1fb26c;
   font-weight: bold;
   position: relative;
   overflow: hidden;
@@ -7628,7 +7602,7 @@ html body .transWrap .forPlatform ul li div .smallInfo .inner {
   display: none;
   width: auto;
   height: auto;
-  background: #cca172;
+  background: #fbbe7c;
   padding: 6px 18px;
   color: #242424;
   border-radius: 3px;
@@ -7715,18 +7689,18 @@ html body .withWrap .walletBox {
   padding-bottom: 15px;
   margin-bottom: 10px;
   background: #313131;
+  border-bottom: solid 1px #f3d3a4;
 }
 html body .withWrap .walletBox .gradient {
   width: 100%;
   height: auto;
+  padding-top: 20px;
 }
 html body .withWrap .walletBox .gradient .content {
   width: 92vw;
-  margin: 25px auto 16px;
-  background: #313131;
+  margin: auto;
+  background: #222;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 5px 0 #c8c8c880;
-          box-shadow: 0 0 5px 0 #c8c8c880;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7743,7 +7717,7 @@ html body .withWrap .walletBox .gradient .content {
   border: solid 1px #b18e56;
 }
 html body .withWrap .walletBox .gradient .content .title {
-  color: #c0933e;
+  color: #f3d3a4;
   font-size: 14px;
   font-weight: bold;
   display: -webkit-box;
@@ -7762,7 +7736,7 @@ html body .withWrap .walletBox .gradient .content .title i {
 }
 html body .withWrap .walletBox .gradient .content .amount {
   font-size: 29px;
-  color: #000000;
+  color: #f2bd7c;
   font-weight: bold;
 }
 html body .withWrap .walletBox .gradient .detail {
@@ -7783,7 +7757,7 @@ html body .withWrap .walletBox .gradient .detail {
           justify-content: space-between;
 }
 html body .withWrap .walletBox .gradient .detail p {
-  color: #c0933e;
+  color: #f3d3a4;
   font-size: 14px;
   font-weight: bold;
   display: -webkit-box;
@@ -7797,21 +7771,14 @@ html body .withWrap .walletBox .gradient .detail p {
 html body .withWrap .walletBox .gradient .detail p button {
   width: 70px;
   height: 23px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(16%, #f3d3a4), color-stop(47%, #c29054), color-stop(84%, #f3d3a4));
-  background: linear-gradient(0deg, #f3d3a4 16%, #c29054 47%, #f3d3a4 84%);
-  font-size: 4vw;
-  font-weight: bold;
-  color: #252525;
-  border-radius: 3px;
-  letter-spacing: 1px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#037440), to(#074528));
+  background: linear-gradient(to bottom, #037440 0%, #074528 100%);
+  color: #f2bd7c;
+  border: 1px solid #f2bd7c;
   margin-top: 8px;
   font-size: 12px;
-}
-html body .withWrap .walletBox .gradient .detail p button:active, html body .withWrap .walletBox .gradient .detail p button.active {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2f845c), to(#1d5832));
-  background: linear-gradient(0deg, #2f845c 0, #1d5832);
-  color: #f3d3a4;
-  border: 1px solid #dcab70;
+  line-height: 21px;
+  border-radius: 3px;
 }
 html body .withWrap .walletBox .gradient .detail p.num {
   color: #ffc266;
@@ -7874,6 +7841,7 @@ html body .withWrap .walletBox .walletDetail .detailBox ul li {
   margin: 0 0.26vw 0.26vw 0;
   border: solid 1px #f3d3a4;
   border-radius: 1.5vw;
+  background: #222;
 }
 html body .withWrap .walletBox .walletDetail .detailBox ul li:nth-of-type(3n) {
   margin-right: 0;
@@ -7910,7 +7878,7 @@ html body .withWrap .walletBox .walletDetail .detailBox ul li div .smallInfo .in
   display: none;
   width: auto;
   height: auto;
-  background: #cca172;
+  background: #fbbe7c;
   padding: 6px 18px;
   color: #242424;
   border-radius: 3px;
@@ -7947,7 +7915,7 @@ html body .withWrap .walletBox .walletDetail .detailBox ul li div .smallInfo .in
 html body .withWrap .walletBox .walletDetail .detailBox ul li p {
   margin-top: 10px;
   font-size: 17px;
-  color: #ffc266;
+  color: #1fb26c;
   font-weight: bold;
 }
 html body .withWrap .walletBox .walletDetail .detailBox .openBtn {
@@ -7992,6 +7960,8 @@ html body .withWrap .withContent {
   padding: 10px 14px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-top: solid 1px #f3d3a4;
+  border-bottom: solid 1px #f3d3a4;
 }
 html body .withWrap .withContent .remind {
   width: 100%;
@@ -8048,7 +8018,7 @@ html body .withWrap .withContent select {
 }
 html body .withWrap .withContent .smallRemind {
   margin-top: 5px;
-  color: #ff1d1d;
+  color: #1fb26c;
   font-size: 12px;
   font-weight: bold;
 }
@@ -8122,10 +8092,10 @@ html body .withWrap .remindBox p.title {
   margin-bottom: 10px;
   font-size: 14px;
   letter-spacing: 1px;
-  color: #c0933e;
+  color: #1fb26c;
 }
 html body .withWrap .remindBox p .sp {
-  color: #ff1d1d;
+  color: #ffc266;
 }
 html body .inviteWrap {
   width: 100%;

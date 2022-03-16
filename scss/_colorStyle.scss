@@ -69,7 +69,7 @@ $memberArea: linear-gradient(0deg,#f0c26b 0,#c09f60 40%,#fae0af);
 
 //箭頭小提示
 @mixin smallTip {
-    background: #cca172;
+    background: #fbbe7c;
     padding: 6px 18px;
     color: #242424;
     border-radius: 3px;
@@ -363,10 +363,10 @@ $help_Word: #f2bd7c;
 }
 
 //slotPage
-$slotGame_Word: #4d4d4d;
+$slotGame_Word: #f3d3a4;
 @mixin slotSearch {
-    background: #f2f3f3;
-    border: solid 1px #cccccc;
+    background: #313131;
+    border: 1px solid #a7854d;
     padding: 4px 10px 4px 15px;
     border-radius: 30px;
     display: flex;
@@ -376,19 +376,19 @@ $slotGame_Word: #4d4d4d;
 @mixin slotSearch_Input {
     background: none;
     border: none;
-    color: #000000;
+    color: #f2bd7c;
     padding-left: 10px;
     font-size: 13px;
     font-weight: bold;
     box-sizing: border-box;
 
     &::placeholder {
-        color: #848484;
+        color: #f2bd7c;
     }
 }
 @mixin slotGameBox {
-    background: linear-gradient(to bottom,#fcfcfc 67%,#d8d8d8 100%);
-    border: solid 1px #b3b3b3;
+    background: #344e1c;
+    border: 1px solid #b3b3b3;
     border-radius: 5px;
     overflow: hidden;
     position: relative;
@@ -444,13 +444,13 @@ $slotGame_Word: #4d4d4d;
 //deposit
 @mixin depositBtn {
     // background: linear-gradient(135deg,transparent,transparent 85%,#dcab70 0,#dcab70);
-    border: 1px solid #2e7b4a;
+    border: 1px solid #1fb26c;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-radius: 3px;
-    color: #2e7b4a;
+    color: #1fb26c;
     font-weight: bold;
     position: relative;
     overflow: hidden;
@@ -596,7 +596,7 @@ $slotGame_Word: #4d4d4d;
         background: linear-gradient(0deg,#2e7b4a 0,#185f32);
     }
 }
-//灰漸層底+橘色漸層active
+//金漸層底+綠色漸層active
 @mixin changeBtn {
     background: linear-gradient(0deg,#efbd82 0,#f8deb8);
     font-size: 4vw;
@@ -612,6 +612,23 @@ $slotGame_Word: #4d4d4d;
         background: linear-gradient(0deg,#2f845c 0,#1d5832);
         color: #f3d3a4;
         border: 1px solid #dcab70;
+    }
+}
+@mixin newsBtn {
+    background: #313131;
+    font-size: 4vw;
+    color: #f2bd7c;
+    border: 1px solid #b18e56;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+
+    &:active,&.active {
+        background: #24693c;
+        color: #ffffff;
+        border: 1px solid #ffffff;
     }
 }
 

@@ -146,11 +146,13 @@
                     &.applyBtn {
                         @include mainBtn;
                         font-size: 16px;
+                        width: 48%;
                     }
 
                     &.checkBtn {
                         @include noBgBtn_Normal;
                         font-size: 16px;
+                        width: 48%;
                     }
                 }
             }
